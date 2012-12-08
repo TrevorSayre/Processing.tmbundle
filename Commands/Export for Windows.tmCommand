@@ -10,15 +10,7 @@
 dir_name=`basename "${TM_PROJECT_DIRECTORY}"`
 if [ -e "$dir_name.pde" ]
   then
-  if [ -e "/usr/bin/processing-java" ]
-    then
-    processing-java --force --sketch=${TM_PROJECT_DIRECTORY} --output=${TM_PROJECT_DIRECTORY}/export/application/windows --export-application --platform="windows"
-  elif [ -e "$HOME/processing-java" ]
-    then
-    ~/processing-java --force --sketch=${TM_PROJECT_DIRECTORY} --output=${TM_PROJECT_DIRECTORY}/export/application/windows --export-application --platform="windows"
-  else
-    echo "ERROR: You must &lt;a href=\"http://wiki.processing.org/w/Command_Line\"&gt;install processing-java&lt;/a&gt;."
-  fi
+    $TM_PROCESSING --force --sketch=${TM_PROJECT_DIRECTORY} --output=${TM_PROJECT_DIRECTORY}/export/application/windows --export-application --platform="windows"
 else
   echo "ERROR: ${TM_PROJECT_DIRECTORY} must contain a file named $dir_name.pde"
 fi
@@ -35,6 +27,8 @@ fi
 	<string>text</string>
 	<key>outputLocation</key>
 	<string>toolTip</string>
+	<key>requiredCommands</key>
+	<string>variableTM_PROCESSINGmoreInfoURLhttp://wiki.processing.org/w/Command_Linecommandprocessing-javalocations/usr/bin/processing-java$HOME/processing-java</string>
 	<key>scope</key>
 	<string>source.processing</string>
 	<key>uuid</key>

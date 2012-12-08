@@ -11,6 +11,8 @@ echo "For now, follow these steps:&lt;br&gt;"
 echo "&lt;ol&gt;&lt;li&gt;Create a new project folder and give it a name (e.g. NewSketch)&lt;/li&gt;"
 echo "&lt;li&gt;Create a new file and give it the same name plus .pde (e.g. NewSketch.pde)&lt;/li&gt;"
 echo "&lt;li&gt;Open the new file in TextMate.&lt;/li&gt;&lt;/ol&gt;"
+echo "It is recommending to keep your project folders in:&lt;br&gt;"
+echo "$HOME/Documents/Processing"
 </string>
 	<key>input</key>
 	<string>none</string>
