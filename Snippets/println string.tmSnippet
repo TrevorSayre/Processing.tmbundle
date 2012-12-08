@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>print($1 + "&lt;br&gt;");$0</string>
+	<string>println($1);$0</string>
 	<key>name</key>
 	<string>println</string>
 	<key>scope</key>
