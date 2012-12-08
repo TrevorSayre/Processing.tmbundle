@@ -4,6 +4,17 @@
 
 This is a bundle for [TextMate 2](https://github.com/textmate/textmate). Now you can work on your [Processing](http://processing.org/) sketch then run, present, and export all from within TextMate. The Processing language will also be properly understood and highlighted along with included useful snippets and reference material.
 
+Already this bundle can:
+* Determine if you installed processing-java globally or to your home folder
+* Run your saved Processing sketch
+* Present your saved Processing sketch
+* Export your Processing sketch as each of the following
+  * Java Applet
+  * Mac OS X App
+  * Windows Executable
+  * Linux Binary
+* Provide tons of snippets and auto completions
+
 ## Shoulders of Giants
 
 TextMate 2 currently inclues a Processing bundle:  
