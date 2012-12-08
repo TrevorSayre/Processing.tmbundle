@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>// rotate, x-axis, y-axis, z-axiz
+gl.glRotatef(${1:angle}, ${2:x}, ${3:y}, ${4:z});</string>
+	<key>name</key>
+	<string>glRotatef</string>
+	<key>scope</key>
+	<string>source.java-processing</string>
+	<key>tabTrigger</key>
+	<string>glrotatef</string>
+	<key>uuid</key>
+	<string>EC5BD95C-1EB6-4EB2-948A-9F193A765017</string>
+</dict>
+</plist>

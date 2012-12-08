@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>noFill();</string>
+	<key>name</key>
+	<string>noFill</string>
+	<key>scope</key>
+	<string>source.java-processing</string>
+	<key>tabTrigger</key>
+	<string>nofill</string>
+	<key>uuid</key>
+	<string>4FF03B08-E482-464E-9D89-A037FDCBB77E</string>
+</dict>
+</plist>

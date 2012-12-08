@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>/**
+ *  ${1:Description}
+ *
+ *	@author ${2:$TM_FULLNAME}
+ *	@since  ${3:`date +%d.%m.%Y`}
+ */</string>
+	<key>name</key>
+	<string>doc - class</string>
+	<key>scope</key>
+	<string>source.java-processing</string>
+	<key>tabTrigger</key>
+	<string>doc</string>
+	<key>uuid</key>
+	<string>3A9F0440-DBFE-4413-B04A-F1B823B4A1F0</string>
+</dict>
+</plist>

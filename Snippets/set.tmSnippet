@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>public void set${1/./\u$0/}(${2:String} new${1/./\u$0/}) {
+    ${1:fieldName} = new${1/./\u$0/};
+}
+</string>
+	<key>name</key>
+	<string>set</string>
+	<key>scope</key>
+	<string>source.java-processing</string>
+	<key>tabTrigger</key>
+	<string>set</string>
+	<key>uuid</key>
+	<string>03A95BD8-AECE-446E-B7FA-197E60FDA8D1</string>
+</dict>
+</plist>

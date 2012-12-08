@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby -wKU
+
+SUPPORT = "#{ENV['TM_SUPPORT_PATH']}"
+
+require SUPPORT + '/lib/ui'
+require SUPPORT + '/lib/exit_codes'
+
+mode_list = [
+  'SQUARE',
+  'PROJECT',
+  'ROUND',
+]
+
+index = TextMate::UI.menu(mode_list)
+
+if index == nil 
+	TextMate.exit_insert_text( "strokeCap(SQUARE);" )
+end
+
+TextMate.exit_insert_snippet( "strokeCap(#{mode_list[index]});" )</string>
+	<key>fallbackInput</key>
+	<string>word</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>name</key>
+	<string>strokeCap</string>
+	<key>output</key>
+	<string>discard</string>
+	<key>scope</key>
+	<string>source.java-processing</string>
+	<key>tabTrigger</key>
+	<string>strokecap</string>
+	<key>uuid</key>
+	<string>C2C83572-B947-44D7-8354-21D8666C22A3</string>
+</dict>
+</plist>

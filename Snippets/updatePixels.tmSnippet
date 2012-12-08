@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>updatePixels();</string>
+	<key>name</key>
+	<string>updatePixels</string>
+	<key>scope</key>
+	<string>source.java-processing</string>
+	<key>tabTrigger</key>
+	<string>updatepixels</string>
+	<key>uuid</key>
+	<string>1AEC432D-7F61-43B6-83D2-9A3FB49B7BAB</string>
+</dict>
+</plist>

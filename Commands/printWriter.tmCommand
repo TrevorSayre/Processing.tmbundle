@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby -wKU
+
+SUPPORT = "#{ENV['TM_SUPPORT_PATH']}"
+
+require SUPPORT + '/lib/ui'
+require SUPPORT + '/lib/exit_codes'
+
+mode_list = [
+  'print',
+  'println',
+  'flush',
+  'close',
+]
+
+index = TextMate::UI.menu(mode_list)
+
+if index == nil 
+	TextMate.exit_insert_snippet( "output.println();" )
+end
+
+TextMate.exit_insert_snippet( "${1:output}.#{mode_list[index]}(${2:});" )</string>
+	<key>fallbackInput</key>
+	<string>word</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>name</key>
+	<string>printWriter</string>
+	<key>output</key>
+	<string>discard</string>
+	<key>scope</key>
+	<string>source.java-processing</string>
+	<key>tabTrigger</key>
+	<string>file</string>
+	<key>uuid</key>
+	<string>D2B7BC1F-3BD4-4DC0-A64F-80788FCE6555</string>
+</dict>
+</plist>

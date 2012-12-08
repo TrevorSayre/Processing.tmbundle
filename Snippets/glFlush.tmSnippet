@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>// Empties buffers. Call this when all previous issues commands completed
+gl.glFlush();</string>
+	<key>name</key>
+	<string>glFlush</string>
+	<key>scope</key>
+	<string>source.java-processing</string>
+	<key>tabTrigger</key>
+	<string>glflush</string>
+	<key>uuid</key>
+	<string>25C0B337-5869-431D-8FD4-11804D364DE2</string>
+</dict>
+</plist>

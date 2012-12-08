@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>vertex(${1:x}, ${2:y}, ${3:z}${6:, ${4:u}, ${5:v}});</string>
+	<key>name</key>
+	<string>vertex 3D</string>
+	<key>scope</key>
+	<string>source.java-processing</string>
+	<key>tabTrigger</key>
+	<string>vertex</string>
+	<key>uuid</key>
+	<string>025228D3-6F0D-4061-A4FC-3E10F708417D</string>
+</dict>
+</plist>

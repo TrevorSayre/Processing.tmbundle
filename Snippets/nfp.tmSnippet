@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>nfp(${3:value}, ${4:left}${6:, ${5:right}});</string>
+	<key>name</key>
+	<string>nfp</string>
+	<key>scope</key>
+	<string>source.java-processing</string>
+	<key>tabTrigger</key>
+	<string>nfp</string>
+	<key>uuid</key>
+	<string>B54BD9D0-9A4B-4F52-BD89-EE0AEA2FF951</string>
+</dict>
+</plist>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>tan(${1:rad});</string>
+	<key>name</key>
+	<string>tan</string>
+	<key>scope</key>
+	<string>source.java-processing</string>
+	<key>tabTrigger</key>
+	<string>tan</string>
+	<key>uuid</key>
+	<string>9A9F17C9-64FC-4EA8-9742-5B2E1D029861</string>
+</dict>
+</plist>

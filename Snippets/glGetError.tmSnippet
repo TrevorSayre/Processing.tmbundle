@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>println(gl.glGetError());</string>
+	<key>name</key>
+	<string>glGetError</string>
+	<key>scope</key>
+	<string>source.java-processing</string>
+	<key>tabTrigger</key>
+	<string>glgeterror</string>
+	<key>uuid</key>
+	<string>0E4DBB91-2692-4F2F-A533-04B1FECC2C5E</string>
+</dict>
+</plist>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>emissive(${8:${3:value1}, ${4:value2}, ${5:value3}});</string>
+	<key>name</key>
+	<string>emissive</string>
+	<key>scope</key>
+	<string>source.java-processing</string>
+	<key>tabTrigger</key>
+	<string>material</string>
+	<key>uuid</key>
+	<string>7202E3BD-CBAE-4DAC-A104-A2B5E800DC56</string>
+</dict>
+</plist>

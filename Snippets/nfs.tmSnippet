@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>nfs(${3:value}, ${4:left}${6:, ${5:right}});</string>
+	<key>name</key>
+	<string>nfs</string>
+	<key>scope</key>
+	<string>source.java-processing</string>
+	<key>tabTrigger</key>
+	<string>nfs</string>
+	<key>uuid</key>
+	<string>DD8380D0-2F6D-4073-AF02-45902DFB6B42</string>
+</dict>
+</plist>

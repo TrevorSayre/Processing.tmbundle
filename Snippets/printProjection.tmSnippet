@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>printProjection();</string>
+	<key>name</key>
+	<string>printProjection</string>
+	<key>scope</key>
+	<string>source.java-processing</string>
+	<key>tabTrigger</key>
+	<string>camera</string>
+	<key>uuid</key>
+	<string>4FE44352-519F-4A1D-9407-5154D2F744C5</string>
+</dict>
+</plist>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>smooth();</string>
+	<key>name</key>
+	<string>smooth</string>
+	<key>scope</key>
+	<string>source.java-processing</string>
+	<key>tabTrigger</key>
+	<string>smooth</string>
+	<key>uuid</key>
+	<string>B6A28A15-3526-436C-B1E8-92A78A504B4E</string>
+</dict>
+</plist>

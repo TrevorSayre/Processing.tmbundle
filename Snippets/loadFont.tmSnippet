@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>${1:font} = loadFont(${3:"${2:FFScala-32.vlw}"});</string>
+	<key>name</key>
+	<string>loadFont</string>
+	<key>scope</key>
+	<string>source.java-processing</string>
+	<key>tabTrigger</key>
+	<string>font</string>
+	<key>uuid</key>
+	<string>2287B72A-F19A-4286-B72B-629AB8DBB804</string>
+</dict>
+</plist>

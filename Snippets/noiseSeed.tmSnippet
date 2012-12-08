@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>noiseSeed(${1:x});</string>
+	<key>name</key>
+	<string>noiseSeed</string>
+	<key>scope</key>
+	<string>source.java-processing</string>
+	<key>tabTrigger</key>
+	<string>noiseseed</string>
+	<key>uuid</key>
+	<string>F12039F2-D2CB-4E9E-9172-8F0E4749F8CC</string>
+</dict>
+</plist>

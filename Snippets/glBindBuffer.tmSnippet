@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>${2:// A buffer ID of zero unbinds a buffer object}
+gl.glBindBuffer(GL.GL_ARRAY_BUFFER, ${1:0});</string>
+	<key>name</key>
+	<string>glBindBuffer</string>
+	<key>scope</key>
+	<string>source.java-processing</string>
+	<key>tabTrigger</key>
+	<string>glbindbuffer</string>
+	<key>uuid</key>
+	<string>1228A431-7454-46DB-B25D-B1546BFD7F92</string>
+</dict>
+</plist>

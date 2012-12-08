@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>min(${1:array}};</string>
+	<key>name</key>
+	<string>min array</string>
+	<key>scope</key>
+	<string>source.java-processing</string>
+	<key>tabTrigger</key>
+	<string>min</string>
+	<key>uuid</key>
+	<string>9A9A6773-36BE-4A71-B840-E795397E7D50</string>
+</dict>
+</plist>

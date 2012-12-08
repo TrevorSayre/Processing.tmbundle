@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>lerp(${1:value1}, ${2:value2}, ${3:amt});</string>
+	<key>name</key>
+	<string>lerp</string>
+	<key>scope</key>
+	<string>source.java-processing</string>
+	<key>tabTrigger</key>
+	<string>lerp</string>
+	<key>uuid</key>
+	<string>002FD960-55DE-449C-BF2C-1A267D8B9B86</string>
+</dict>
+</plist>

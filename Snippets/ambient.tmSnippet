@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>ambient(${8:${3:value1}, ${4:value2}, ${5:value3}});</string>
+	<key>name</key>
+	<string>ambient</string>
+	<key>scope</key>
+	<string>source.java-processing</string>
+	<key>tabTrigger</key>
+	<string>material</string>
+	<key>uuid</key>
+	<string>6A1F5684-FFC7-49AE-A23E-17B2E273F17B</string>
+</dict>
+</plist>

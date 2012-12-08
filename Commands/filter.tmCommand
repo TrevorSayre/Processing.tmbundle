@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby -wKU
+
+SUPPORT = "#{ENV['TM_SUPPORT_PATH']}"
+
+require SUPPORT + '/lib/ui'
+require SUPPORT + '/lib/exit_codes'
+
+mode_list = [
+  'THRESHOLD',
+  'GRAY',
+  'INVERT',
+  'POSTERIZE',
+  'BLUR',
+  'OPAQUE',
+  'ERODE',
+  'DILATE',
+]
+
+index = TextMate::UI.menu(mode_list)
+
+if index == nil 
+	TextMate.exit_insert_snippet( "filter(GRAY);" )
+end
+
+TextMate.exit_insert_snippet( "filter(#{mode_list[index]}${2:, ${1:level}});" )</string>
+	<key>fallbackInput</key>
+	<string>word</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>name</key>
+	<string>filter</string>
+	<key>output</key>
+	<string>discard</string>
+	<key>scope</key>
+	<string>source.java-processing</string>
+	<key>tabTrigger</key>
+	<string>filter</string>
+	<key>uuid</key>
+	<string>D4B95FF9-D68E-4F3E-BA3F-B155D36BCA0D</string>
+</dict>
+</plist>

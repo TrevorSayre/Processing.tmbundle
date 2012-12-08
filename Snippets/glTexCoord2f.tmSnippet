@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>// set the current texture coordinates - 2 floats
+gl.glTexCoord2f(${1:0.0f}, ${2:0.0f});</string>
+	<key>name</key>
+	<string>glTexCoord2f</string>
+	<key>scope</key>
+	<string>source.java-processing</string>
+	<key>tabTrigger</key>
+	<string>gltexcoord2f</string>
+	<key>uuid</key>
+	<string>3CE6AC06-8C60-4AA2-BAC7-120221F2F401</string>
+</dict>
+</plist>

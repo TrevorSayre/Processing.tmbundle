@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>constrain(${1:value}, ${2:min}, ${3:max});</string>
+	<key>name</key>
+	<string>constrain</string>
+	<key>scope</key>
+	<string>source.java-processing</string>
+	<key>tabTrigger</key>
+	<string>constrain</string>
+	<key>uuid</key>
+	<string>61047076-5863-4DA3-AE5C-C0B6ED0315F3</string>
+</dict>
+</plist>

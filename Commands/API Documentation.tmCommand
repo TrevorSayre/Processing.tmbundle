@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env bash
+
+echo "&lt;meta http-equiv='Refresh' content='0;URL=http://processing.org/reference/index.html'&gt;"
+
+
+</string>
+	<key>input</key>
+	<string>none</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>keyEquivalent</key>
+	<string>^h</string>
+	<key>name</key>
+	<string>API Documentation</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>html</string>
+	<key>outputLocation</key>
+	<string>newWindow</string>
+	<key>scope</key>
+	<string>source.java-processing</string>
+	<key>uuid</key>
+	<string>5E9C19FB-4182-4BCC-A4DC-6ED66F3B8B2E</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>

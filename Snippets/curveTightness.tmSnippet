@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>curveTightness(${1:squishy});</string>
+	<key>name</key>
+	<string>curveTightness</string>
+	<key>scope</key>
+	<string>source.java-processing</string>
+	<key>tabTrigger</key>
+	<string>curve</string>
+	<key>uuid</key>
+	<string>2AD97B0F-DCA1-4CA7-BF7B-F8B0B9523959</string>
+</dict>
+</plist>

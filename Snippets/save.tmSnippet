@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>saveFrame(${2:"${1:filename}"});</string>
+	<key>name</key>
+	<string>save</string>
+	<key>scope</key>
+	<string>source.java-processing</string>
+	<key>tabTrigger</key>
+	<string>save</string>
+	<key>uuid</key>
+	<string>8493AFC7-2CB8-40AB-B9E9-E1DFB751D2F3</string>
+</dict>
+</plist>

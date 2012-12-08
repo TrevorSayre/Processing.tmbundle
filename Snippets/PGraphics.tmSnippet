@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>PGraphics pg;
+pg = createGraphics(${5:${1:width}, ${2:height}${4:, ${3:applet}}});</string>
+	<key>name</key>
+	<string>PGraphics</string>
+	<key>scope</key>
+	<string>source.java-processing</string>
+	<key>tabTrigger</key>
+	<string>pgraphics</string>
+	<key>uuid</key>
+	<string>CA9B80C6-8B23-4313-94CA-85B0F20F7CD6</string>
+</dict>
+</plist>

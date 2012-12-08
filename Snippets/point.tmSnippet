@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>point(${1:x}, ${2:y}${4:, ${3:z}});</string>
+	<key>name</key>
+	<string>point</string>
+	<key>scope</key>
+	<string>source.java-processing</string>
+	<key>tabTrigger</key>
+	<string>point</string>
+	<key>uuid</key>
+	<string>A5A6902C-320B-448E-9816-E4F0A8462D08</string>
+</dict>
+</plist>

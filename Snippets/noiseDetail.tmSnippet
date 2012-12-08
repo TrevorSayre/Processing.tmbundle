@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>noiseDetail(${1:octaves}${4:, ${3:falloff}});</string>
+	<key>name</key>
+	<string>noiseDetail</string>
+	<key>scope</key>
+	<string>source.java-processing</string>
+	<key>tabTrigger</key>
+	<string>noisedetail</string>
+	<key>uuid</key>
+	<string>905544FD-D314-472F-A3D5-A75579FA6C90</string>
+</dict>
+</plist>

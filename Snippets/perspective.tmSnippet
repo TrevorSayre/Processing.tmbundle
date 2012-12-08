@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>perspective(${5:${1:fov}, ${2:aspect}, ${3:zNear}, ${4:zFar}});</string>
+	<key>name</key>
+	<string>perspective</string>
+	<key>scope</key>
+	<string>source.java-processing</string>
+	<key>tabTrigger</key>
+	<string>camera</string>
+	<key>uuid</key>
+	<string>5A8975FD-0866-48D2-A224-B4378784A238</string>
+</dict>
+</plist>

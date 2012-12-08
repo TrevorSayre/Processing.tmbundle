@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>PImage(${1:width}, ${2:height});</string>
+	<key>name</key>
+	<string>PImage</string>
+	<key>scope</key>
+	<string>source.java-processing</string>
+	<key>tabTrigger</key>
+	<string>pimage</string>
+	<key>uuid</key>
+	<string>49F733E6-BAA9-408F-AB74-3D714F9679EF</string>
+</dict>
+</plist>

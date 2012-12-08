@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>gl.glVertex3f(${1:0.0f}, ${2:0.0f}, ${3:0.0f});</string>
+	<key>name</key>
+	<string>glVertex3f</string>
+	<key>scope</key>
+	<string>source.java-processing</string>
+	<key>tabTrigger</key>
+	<string>glvertex3f</string>
+	<key>uuid</key>
+	<string>EC87E422-1557-4CFD-B31E-11B63B127505</string>
+</dict>
+</plist>

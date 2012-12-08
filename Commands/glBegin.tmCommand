@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby -wKU
+
+SUPPORT = "#{ENV['TM_SUPPORT_PATH']}"
+
+require SUPPORT + '/lib/ui'
+require SUPPORT + '/lib/exit_codes'
+
+mode_list = [
+  'GL.GL_POINTS',
+  'GL.GL_LINES',
+  'GL.GL_LINE_STRIP',
+  'GL.GL_LINE_LOOP',
+  'GL.GL_TRIANGLES',
+  'GL.GL_TRIANGLE_STRIP',
+  'GL.GL_TRIANGLE_FAN',
+  'GL.GL_QUADS',
+  'GL.GL_QUAD_STRIP',
+  'GL.GL_POLYGON',
+]
+
+index = TextMate::UI.menu(mode_list)
+
+TextMate.exit_insert_snippet( "//delimit the vertices of a primitive or a group of like primitives
+gl.glBegin(#{mode_list[index]});
+${1}
+gl.glEnd();" )</string>
+	<key>fallbackInput</key>
+	<string>word</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>name</key>
+	<string>glBegin</string>
+	<key>output</key>
+	<string>discard</string>
+	<key>scope</key>
+	<string>source.java-processing</string>
+	<key>tabTrigger</key>
+	<string>glbegin</string>
+	<key>uuid</key>
+	<string>4F4AAE39-CACC-482C-A4D8-4BC3C2161434</string>
+</dict>
+</plist>

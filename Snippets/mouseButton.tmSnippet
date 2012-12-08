@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>mouseButton</string>
+	<key>name</key>
+	<string>mouseButton</string>
+	<key>scope</key>
+	<string>source.java-processing</string>
+	<key>tabTrigger</key>
+	<string>mouse</string>
+	<key>uuid</key>
+	<string>094F320B-EF49-4B11-A355-087993DD9C50</string>
+</dict>
+</plist>

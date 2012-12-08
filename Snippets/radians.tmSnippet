@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>radians(${1:deg});</string>
+	<key>name</key>
+	<string>radians</string>
+	<key>scope</key>
+	<string>source.java-processing</string>
+	<key>tabTrigger</key>
+	<string>radians</string>
+	<key>uuid</key>
+	<string>700B8290-24A0-4F09-B1C5-6731DBA40515</string>
+</dict>
+</plist>

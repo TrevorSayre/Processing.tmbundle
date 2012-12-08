@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>pushMatrix();
+${1:};
+popMatrix();</string>
+	<key>name</key>
+	<string>pushMatrix</string>
+	<key>scope</key>
+	<string>source.java-processing</string>
+	<key>tabTrigger</key>
+	<string>matrix</string>
+	<key>uuid</key>
+	<string>99B2E28F-8651-4276-A339-DD393EF2C334</string>
+</dict>
+</plist>

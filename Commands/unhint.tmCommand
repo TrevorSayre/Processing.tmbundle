@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby -wKU
+
+SUPPORT = "#{ENV['TM_SUPPORT_PATH']}"
+
+require SUPPORT + '/lib/ui'
+require SUPPORT + '/lib/exit_codes'
+
+mode_list = [
+  'ENABLE_OPENGL_2X_SMOOTH',
+  'ENABLE_OPENGL_4X_SMOOTH',
+  'ENABLE_NATIVE_FONTS',
+  'DISABLE_DEPTH_TEST',
+  'ENABLE_DEPTH_SORT',
+  'DISABLE_ERROR_REPORT',
+  'ENABLE_ACCURATE_TEXTURES',
+  'DISABLE_AUTO_GZIP',
+]
+
+index = TextMate::UI.menu(mode_list)
+
+if index == nil 
+	TextMate.exit_insert_snippet( "unhint(${1:});" )
+end
+
+TextMate.exit_insert_snippet( "unhint(#{mode_list[index]});" )</string>
+	<key>fallbackInput</key>
+	<string>word</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>name</key>
+	<string>unhint</string>
+	<key>output</key>
+	<string>discard</string>
+	<key>scope</key>
+	<string>source.java-processing</string>
+	<key>tabTrigger</key>
+	<string>unhint</string>
+	<key>uuid</key>
+	<string>010780D5-F323-4565-BF2D-0C318FF9AE05</string>
+</dict>
+</plist>

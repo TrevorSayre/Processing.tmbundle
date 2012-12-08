@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby -wKU
+
+SUPPORT = "#{ENV['TM_SUPPORT_PATH']}"
+
+require SUPPORT + '/lib/ui'
+require SUPPORT + '/lib/exit_codes'
+
+align_mode_list = [
+  'LEFT',
+  'CENTER',
+  'RIGHT',
+]
+
+align_index = TextMate::UI.menu(align_mode_list)
+
+valign_mode_list = [
+  'TOP',
+  'BOTTOM',
+  'CENTER',
+  'BASELINE',
+]
+
+valign_index = TextMate::UI.menu(valign_mode_list)
+
+TextMate.exit_insert_snippet( "textAlign(#{align_mode_list[align_index]}, #{valign_mode_list[valign_index]});" )</string>
+	<key>fallbackInput</key>
+	<string>word</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>name</key>
+	<string>textAlign</string>
+	<key>output</key>
+	<string>discard</string>
+	<key>scope</key>
+	<string>source.java-processing</string>
+	<key>tabTrigger</key>
+	<string>text</string>
+	<key>uuid</key>
+	<string>08881B9D-2574-4E59-A577-0E310C20AC5F</string>
+</dict>
+</plist>

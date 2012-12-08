@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>gl.glColor4f(${1:red}, ${2:green}, ${3:blue}, ${4:alpha});</string>
+	<key>name</key>
+	<string>glColor4f</string>
+	<key>scope</key>
+	<string>source.java-processing</string>
+	<key>tabTrigger</key>
+	<string>glcolor4f</string>
+	<key>uuid</key>
+	<string>443C8DA7-254A-418B-A749-E129A9FAEEFE</string>
+</dict>
+</plist>

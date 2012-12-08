@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>norm(${1:value}, ${2:low}, ${3:high});</string>
+	<key>name</key>
+	<string>norm</string>
+	<key>scope</key>
+	<string>source.java-processing</string>
+	<key>tabTrigger</key>
+	<string>norm</string>
+	<key>uuid</key>
+	<string>B0D79E21-E0E2-4250-891A-F7E6126895E9</string>
+</dict>
+</plist>

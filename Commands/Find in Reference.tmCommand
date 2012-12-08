@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env bash
+
+url="https://www.google.com/search?as_sitesearch=processing.org&amp;as_q="$TM_SELECTED_TEXT
+
+echo  "&lt;meta http-equiv='Refresh' content='0;URL=$url'&gt;"</string>
+	<key>input</key>
+	<string>none</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>keyEquivalent</key>
+	<string>^f</string>
+	<key>name</key>
+	<string>Find in Reference</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>html</string>
+	<key>outputLocation</key>
+	<string>newWindow</string>
+	<key>scope</key>
+	<string>source.java-processing</string>
+	<key>uuid</key>
+	<string>44714224-FDF6-476E-BDB3-C13D7EB94C53</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>

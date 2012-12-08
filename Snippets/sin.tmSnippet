@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>sin(${1:rad});</string>
+	<key>name</key>
+	<string>sin</string>
+	<key>scope</key>
+	<string>source.java-processing</string>
+	<key>tabTrigger</key>
+	<string>sin</string>
+	<key>uuid</key>
+	<string>9BB2ECB0-2E67-44C8-B173-946EA7B092E4</string>
+</dict>
+</plist>

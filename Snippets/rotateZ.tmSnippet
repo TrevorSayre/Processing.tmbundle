@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>rotateZ(${1:angle});</string>
+	<key>name</key>
+	<string>rotateZ</string>
+	<key>scope</key>
+	<string>source.java-processing</string>
+	<key>tabTrigger</key>
+	<string>rotate</string>
+	<key>uuid</key>
+	<string>9DD8DB45-84F2-43DC-B544-2BE189258E83</string>
+</dict>
+</plist>

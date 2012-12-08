@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>bezierTangent(${1:a}, ${1:b}, ${1:c}, ${1:d}, ${1:t});</string>
+	<key>name</key>
+	<string>bezierTangent</string>
+	<key>scope</key>
+	<string>source.java-processing</string>
+	<key>tabTrigger</key>
+	<string>bezier</string>
+	<key>uuid</key>
+	<string>3BD53FB4-254B-4C48-9DBC-CEAED2CCAF29</string>
+</dict>
+</plist>

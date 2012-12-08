@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>cat &lt;&lt;SNIPPET
+public \${1:void} function ${TM_SELECTED_TEXT:-$TM_CURRENT_WORD}(\$2) {
+	\$0\${1/void\$|(.+)/(?1:return null;)/}
+}
+SNIPPET
+</string>
+	<key>fallbackInput</key>
+	<string>word</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>keyEquivalent</key>
+	<string>$</string>
+	<key>name</key>
+	<string>function</string>
+	<key>output</key>
+	<string>insertAsSnippet</string>
+	<key>scope</key>
+	<string>source.java-processing</string>
+	<key>uuid</key>
+	<string>4F8B3A66-C72C-4523-9456-53672543B9E3</string>
+</dict>
+</plist>

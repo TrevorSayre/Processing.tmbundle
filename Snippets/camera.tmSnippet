@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>camera(${10:${1:eyeX}, ${2:eyeY}, ${3:eyeZ}, ${4:centerX}, ${5:centerY}, ${6:centerZ}, ${7:upX}, ${8:upY}, ${9:upZ}});</string>
+	<key>name</key>
+	<string>camera</string>
+	<key>scope</key>
+	<string>source.java-processing</string>
+	<key>tabTrigger</key>
+	<string>camera</string>
+	<key>uuid</key>
+	<string>AE6951C7-9DFA-48E7-888E-0CEEA87E43DF</string>
+</dict>
+</plist>

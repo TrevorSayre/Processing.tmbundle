@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>reverse(${1:array});</string>
+	<key>name</key>
+	<string>reverse</string>
+	<key>scope</key>
+	<string>source.java-processing</string>
+	<key>tabTrigger</key>
+	<string>reverse</string>
+	<key>uuid</key>
+	<string>AFDC3DE7-A6EF-4104-B7F3-FF102C61BC10</string>
+</dict>
+</plist>

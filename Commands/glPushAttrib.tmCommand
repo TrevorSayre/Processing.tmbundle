@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby -wKU
+
+SUPPORT = "#{ENV['TM_SUPPORT_PATH']}"
+
+require SUPPORT + '/lib/ui'
+require SUPPORT + '/lib/exit_codes'
+
+cap_list = [
+  'GL.GL_COLOR_BUFFER_BIT',
+  'GL.GL_CURRENT_BIT',
+  'GL.GL_DEPTH_BUFFER_BIT',
+]
+
+index = TextMate::UI.menu(cap_list)
+
+TextMate.exit_insert_snippet( "// http://www.opengl.org/documentation/specs/man_pages/hardcopy/GL/html/gl/pushattrib.html
+gl.glPushAttrib(#{cap_list[index]});
+${1}
+gl.glPopAttrib();" )</string>
+	<key>fallbackInput</key>
+	<string>word</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>name</key>
+	<string>glPushAttrib</string>
+	<key>output</key>
+	<string>discard</string>
+	<key>scope</key>
+	<string>source.java-processing</string>
+	<key>tabTrigger</key>
+	<string>glpushattrib</string>
+	<key>uuid</key>
+	<string>89FD2B37-C210-4427-BF1A-AA7D231B91CD</string>
+</dict>
+</plist>

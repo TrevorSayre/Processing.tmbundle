@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby -wKU
+
+SUPPORT = "#{ENV['TM_SUPPORT_PATH']}"
+
+require SUPPORT + '/lib/ui'
+require SUPPORT + '/lib/exit_codes'
+
+sfactor__list = [
+  'GL.GL_ZERO',
+  'GL.GL_ONE',
+  'GL.GL_SRC_COLOR',
+  'GL.GL_ONE_MINUS_SRC_COLOR',
+  'GL.GL_DST_COLOR',
+  'GL.GL_ONE_MINUS_DST_COLOR',
+  'GL.GL_SRC_ALPHA',
+  'GL.GL_ONE_MINUS_SRC_ALPHA',
+  'GL.GL_DST_ALPHA',
+  'GL.GL_ONE_MINUS_DST_ALPHA',
+  'GL.GL_CONSTANT_COLOR',
+  'GL.GL_ONE_MINUS_CONSTANT_COLOR',
+  'GL.GL_CONSTANT_ALPHA',
+  'GL.GL_ONE_MINUS_CONSTANT_ALPHA',
+  'GL.GL_SRC_ALPHA_SATURATE',
+]
+
+align_index = TextMate::UI.menu(sfactor__list)
+
+dfactor__list = [
+  'GL.GL_ZERO',
+  'GL.GL_ONE',
+  'GL.GL_SRC_COLOR',
+  'GL.GL_ONE_MINUS_SRC_COLOR',
+  'GL.GL_DST_COLOR',
+  'GL.GL_ONE_MINUS_DST_COLOR',
+  'GL.GL_SRC_ALPHA',
+  'GL.GL_ONE_MINUS_SRC_ALPHA',
+  'GL.GL_DST_ALPHA',
+  'GL.GL_ONE_MINUS_DST_ALPHA',
+  'GL.GL_CONSTANT_COLOR',
+  'GL.GL_ONE_MINUS_CONSTANT_COLOR',
+  'GL.GL_CONSTANT_ALPHA',
+  'GL.GL_ONE_MINUS_CONSTANT_ALPHA',
+]
+
+valign_index = TextMate::UI.menu(dfactor__list)
+
+TextMate.exit_insert_snippet( "//defines the operation of blending when it is enabled
+gl.glBlendFunc(#{sfactor__list[align_index]}, #{dfactor__list[valign_index]});" )</string>
+	<key>fallbackInput</key>
+	<string>word</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>name</key>
+	<string>glBlendFunc</string>
+	<key>output</key>
+	<string>discard</string>
+	<key>scope</key>
+	<string>source.java-processing</string>
+	<key>tabTrigger</key>
+	<string>glblendfunc</string>
+	<key>uuid</key>
+	<string>F14B861B-53E5-440C-AB33-87E04691708F</string>
+</dict>
+</plist>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby -wKU
+
+SUPPORT = "#{ENV['TM_SUPPORT_PATH']}"
+
+require SUPPORT + '/lib/ui'
+require SUPPORT + '/lib/exit_codes'
+
+cap_list = [
+  'GL.GL_BLEND',
+  'GL.GL_DEPTH_TEST',
+  'GL.GL_DITHER',
+  'GL.GL_MULTISAMPLE',
+  'GL.GL_LIGHTING',
+]
+
+index = TextMate::UI.menu(cap_list)
+
+TextMate.exit_insert_snippet( "// enable or disable server-side GL capabilities
+gl.glDisable(#{cap_list[index]});" )</string>
+	<key>fallbackInput</key>
+	<string>word</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>name</key>
+	<string>glDisable</string>
+	<key>output</key>
+	<string>discard</string>
+	<key>scope</key>
+	<string>source.java-processing</string>
+	<key>tabTrigger</key>
+	<string>gldisable</string>
+	<key>uuid</key>
+	<string>A83DB60E-832B-45C9-8171-EE70D9ADAD33</string>
+</dict>
+</plist>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby -wKU
+
+SUPPORT = "#{ENV['TM_SUPPORT_PATH']}"
+
+require SUPPORT + '/lib/ui'
+require SUPPORT + '/lib/exit_codes'
+
+face__list = [
+  'GL.GL_FRONT',
+  'GL.GL_BACK',
+  'GL.GL_FRONT_AND_BACK',
+]
+
+align_index = TextMate::UI.menu(face__list)
+
+mode__list = [
+  'GL.GL_POINT',
+  'GL.GL_LINE',
+  'GL.GL_FILL',
+]
+
+valign_index = TextMate::UI.menu(mode__list)
+
+TextMate.exit_insert_snippet( "//defines the operation of blending when it is enabled
+gl.glPolygonMode(#{face__list[align_index]}, #{mode__list[valign_index]});" )</string>
+	<key>fallbackInput</key>
+	<string>word</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>name</key>
+	<string>glPolygonMode</string>
+	<key>output</key>
+	<string>discard</string>
+	<key>scope</key>
+	<string>source.java-processing</string>
+	<key>tabTrigger</key>
+	<string>glpolygonmode</string>
+	<key>uuid</key>
+	<string>FD2B2FAA-2741-4E4A-ACBF-B2D7E7E3603E</string>
+</dict>
+</plist>

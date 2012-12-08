@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>curveDetail(${1:detail});</string>
+	<key>name</key>
+	<string>curveDetail</string>
+	<key>scope</key>
+	<string>source.java-processing</string>
+	<key>tabTrigger</key>
+	<string>curve</string>
+	<key>uuid</key>
+	<string>4D0DF8EE-63D6-4BFC-BBCE-1E2094C7BBC4</string>
+</dict>
+</plist>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>lightFalloff(${1:constant}, ${2:linear}, ${3:quadratic});</string>
+	<key>name</key>
+	<string>lightFalloff</string>
+	<key>scope</key>
+	<string>source.java-processing</string>
+	<key>tabTrigger</key>
+	<string>light</string>
+	<key>uuid</key>
+	<string>A6C0EE0A-6B02-4C76-9282-741302E9456E</string>
+</dict>
+</plist>

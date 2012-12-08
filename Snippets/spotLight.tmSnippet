@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>spotLight(${1:v1}, ${2:v2}, ${3:v3}, ${4:x}, ${5:y}, ${6:z}, ${7:nx}, ${8:ny}, ${9:nz}, ${10:angle}, ${11:concentration});</string>
+	<key>name</key>
+	<string>spotLight</string>
+	<key>scope</key>
+	<string>source.java-processing</string>
+	<key>tabTrigger</key>
+	<string>light</string>
+	<key>uuid</key>
+	<string>31CCA97E-0C10-4A51-954A-C4CD1DD7EF42</string>
+</dict>
+</plist>

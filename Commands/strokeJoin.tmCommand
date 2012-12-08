@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby -wKU
+
+SUPPORT = "#{ENV['TM_SUPPORT_PATH']}"
+
+require SUPPORT + '/lib/ui'
+require SUPPORT + '/lib/exit_codes'
+
+join_list = [
+
+  'MITER',
+  'BEVEL',
+  'ROUND',
+]
+
+index = TextMate::UI.menu(join_list)
+
+if index == nil 
+	TextMate.exit_insert_text( "strokeJoin(MITER);" )
+end
+
+TextMate.exit_insert_snippet( "strokeJoin(#{join_list[index]});" )</string>
+	<key>fallbackInput</key>
+	<string>word</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>name</key>
+	<string>strokeJoin</string>
+	<key>output</key>
+	<string>discard</string>
+	<key>scope</key>
+	<string>source.java-processing</string>
+	<key>tabTrigger</key>
+	<string>stroke</string>
+	<key>uuid</key>
+	<string>C4A6CD23-9DC7-462C-9F91-328E45B9C965</string>
+</dict>
+</plist>

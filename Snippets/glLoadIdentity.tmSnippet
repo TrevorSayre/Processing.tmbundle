@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>// replaces the top of the active matrix stack with the identity matrix
+gl.glLoadIdentity();</string>
+	<key>name</key>
+	<string>glLoadIdentity</string>
+	<key>scope</key>
+	<string>source.java-processing</string>
+	<key>tabTrigger</key>
+	<string>glloadidentity</string>
+	<key>uuid</key>
+	<string>56BC66B1-71D0-4573-81DE-711C45061E3D</string>
+</dict>
+</plist>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby -wKU
+
+SUPPORT = "#{ENV['TM_SUPPORT_PATH']}"
+
+require SUPPORT + '/lib/ui'
+require SUPPORT + '/lib/exit_codes'
+
+mode_list = [
+  'BLEND',
+  'ADD',
+  'SUBTRACT',
+  'DARKEST',
+  'LIGHTEST',
+  'DIFFERENCE',
+  'EXCLUSION',
+  'MULTIPLY',
+  'SCREEN',
+  'OVERLAY',
+  'HARD_LIGHT',
+  'SOFT_LIGHT',
+  'DODGE',
+  'BURN',
+]
+
+index = TextMate::UI.menu(mode_list)
+
+if index == nil 
+	TextMate.exit_insert_snippet( "blendColor(${1:});" )
+end
+
+TextMate.exit_insert_snippet( "blendMode(${1:c1}, ${2:c2}, #{mode_list[index]});" )</string>
+	<key>fallbackInput</key>
+	<string>word</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>name</key>
+	<string>blendMode</string>
+	<key>output</key>
+	<string>discard</string>
+	<key>scope</key>
+	<string>source.java-processing</string>
+	<key>tabTrigger</key>
+	<string>blendmode</string>
+	<key>uuid</key>
+	<string>B001942F-0708-4C78-9FF0-D06143BB1EAA</string>
+</dict>
+</plist>

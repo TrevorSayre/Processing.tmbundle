@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby -wKU
+
+SUPPORT = "#{ENV['TM_SUPPORT_PATH']}"
+
+require SUPPORT + '/lib/ui'
+require SUPPORT + '/lib/exit_codes'
+
+import_list = [
+
+  'processing.opengl.*',
+  'processing.video.*',
+  'processing.serial.*',
+  'processing.pdf.*',
+  'processing.net.*',
+  'processing.dxf.*',
+  '---',
+  'netscape.javascript.*',
+  'noc.*',
+]
+
+index = TextMate::UI.menu(import_list)
+
+if index == nil 
+	TextMate.exit_insert_text( "import" )
+end
+
+TextMate.exit_insert_snippet( "import #{import_list[index]};" )</string>
+	<key>fallbackInput</key>
+	<string>word</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>name</key>
+	<string>import </string>
+	<key>output</key>
+	<string>discard</string>
+	<key>scope</key>
+	<string>source.java-processing</string>
+	<key>tabTrigger</key>
+	<string>import</string>
+	<key>uuid</key>
+	<string>FAF95DA3-4B60-4639-B9B6-83FCF25E01C4</string>
+</dict>
+</plist>

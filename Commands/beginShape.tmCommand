@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby -wKU
+
+SUPPORT = "#{ENV['TM_SUPPORT_PATH']}"
+
+require SUPPORT + '/lib/ui'
+require SUPPORT + '/lib/exit_codes'
+
+mode_list = [
+  'POINTS',
+  'LINES',
+  'TRIANGLES',
+  'TRIANGLE_FAN',
+  'TRIANGLE_STRIP',
+  'QUADS',
+  'QUAD_STRIP',
+]
+
+index = TextMate::UI.menu(mode_list)
+
+if index == nil 
+	TextMate.exit_insert_snippet( "beginShape();
+vertex(${1:x}, ${2:y}${4:, ${3:z}});
+endShape();" )
+end
+
+TextMate.exit_insert_snippet( "beginShape(#{mode_list[index]});
+vertex(${1:x}, ${2:y}${4:, ${3:z}});
+endShape();" )</string>
+	<key>fallbackInput</key>
+	<string>word</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>name</key>
+	<string>beginShape</string>
+	<key>output</key>
+	<string>discard</string>
+	<key>scope</key>
+	<string>source.java-processing</string>
+	<key>tabTrigger</key>
+	<string>beginshape</string>
+	<key>uuid</key>
+	<string>AC7EB6F0-0206-4ABC-B830-5D3F2CD01DFF</string>
+</dict>
+</plist>
