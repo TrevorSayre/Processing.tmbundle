@@ -8,7 +8,7 @@ $1 = loadFont(${3:"${2:FFScala-32.vlw}"});</string>
 	<key>name</key>
 	<string>PFont</string>
 	<key>scope</key>
-	<string>source.java-processing</string>
+	<string>source.processing</string>
 	<key>tabTrigger</key>
 	<string>font</string>
 	<key>uuid</key>

@@ -8,7 +8,7 @@ gl.glLoadIdentity();</string>
 	<key>name</key>
 	<string>glLoadIdentity</string>
 	<key>scope</key>
-	<string>source.java-processing</string>
+	<string>source.processing</string>
 	<key>tabTrigger</key>
 	<string>glloadidentity</string>
 	<key>uuid</key>

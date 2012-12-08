@@ -5,7 +5,7 @@
 	<key>name</key>
 	<string>Comments (Java Processing)</string>
 	<key>scope</key>
-	<string>source.java-processing</string>
+	<string>source.processing</string>
 	<key>settings</key>
 	<dict>
 		<key>shellVariables</key>

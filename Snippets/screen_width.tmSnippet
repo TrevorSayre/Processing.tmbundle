@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>screen.width</string>
 	<key>scope</key>
-	<string>source.java-processing</string>
+	<string>source.processing</string>
 	<key>tabTrigger</key>
 	<string>screen</string>
 	<key>uuid</key>

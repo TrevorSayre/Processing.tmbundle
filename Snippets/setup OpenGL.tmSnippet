@@ -60,7 +60,7 @@ void getOpenGLErrors(){
 	<key>name</key>
 	<string>setup OpenGL</string>
 	<key>scope</key>
-	<string>source.java-processing</string>
+	<string>source.processing</string>
 	<key>tabTrigger</key>
 	<string>setup</string>
 	<key>uuid</key>

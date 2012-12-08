@@ -8,7 +8,7 @@ gl.glRotatef(${1:angle}, ${2:x}, ${3:y}, ${4:z});</string>
 	<key>name</key>
 	<string>glRotatef</string>
 	<key>scope</key>
-	<string>source.java-processing</string>
+	<string>source.processing</string>
 	<key>tabTrigger</key>
 	<string>glrotatef</string>
 	<key>uuid</key>

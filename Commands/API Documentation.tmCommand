@@ -26,10 +26,10 @@ echo "&lt;meta http-equiv='Refresh' content='0;URL=http://processing.org/referen
 	<key>outputLocation</key>
 	<string>newWindow</string>
 	<key>scope</key>
-	<string>source.java-processing</string>
+	<string>source.processing</string>
 	<key>uuid</key>
 	<string>5E9C19FB-4182-4BCC-A4DC-6ED66F3B8B2E</string>
 	<key>version</key>
-	<integer>2</integer>
+	<string>2</string>
 </dict>
 </plist>

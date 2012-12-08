@@ -33,7 +33,8 @@ if index == nil
 	TextMate.exit_insert_snippet( "blend(${1:});" )
 end
 
-TextMate.exit_insert_snippet( "blend(${11:${10:srcImg}, }${1:x}, ${2:y}, ${3:width}, ${4:height}, ${5:dx}, ${6:dy}, ${7:dwidth}, ${8:dheight}, ${9:#{mode_list[index]}});" )</string>
+TextMate.exit_insert_snippet( "blend(${11:${10:srcImg}, }${1:x}, ${2:y}, ${3:width}, ${4:height}, ${5:dx}, ${6:dy}, ${7:dwidth}, ${8:dheight}, ${9:#{mode_list[index]}});" )
+</string>
 	<key>fallbackInput</key>
 	<string>word</string>
 	<key>input</key>
@@ -43,7 +44,7 @@ TextMate.exit_insert_snippet( "blend(${11:${10:srcImg}, }${1:x}, ${2:y}, ${3:wid
 	<key>output</key>
 	<string>discard</string>
 	<key>scope</key>
-	<string>source.java-processing</string>
+	<string>source.processing</string>
 	<key>tabTrigger</key>
 	<string>blend</string>
 	<key>uuid</key>

@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>frameCount</string>
 	<key>scope</key>
-	<string>source.java-processing</string>
+	<string>source.processing</string>
 	<key>tabTrigger</key>
 	<string>framerate</string>
 	<key>uuid</key>

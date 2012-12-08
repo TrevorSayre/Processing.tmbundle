@@ -8,7 +8,7 @@ gl.glTexCoord2f(${1:0.0f}, ${2:0.0f});</string>
 	<key>name</key>
 	<string>glTexCoord2f</string>
 	<key>scope</key>
-	<string>source.java-processing</string>
+	<string>source.processing</string>
 	<key>tabTrigger</key>
 	<string>gltexcoord2f</string>
 	<key>uuid</key>

@@ -9,7 +9,8 @@
 
 url="https://www.google.com/search?as_sitesearch=processing.org&amp;as_q="$TM_SELECTED_TEXT
 
-echo  "&lt;meta http-equiv='Refresh' content='0;URL=$url'&gt;"</string>
+echo  "&lt;meta http-equiv='Refresh' content='0;URL=$url'&gt;"
+</string>
 	<key>input</key>
 	<string>none</string>
 	<key>inputFormat</key>
@@ -25,10 +26,10 @@ echo  "&lt;meta http-equiv='Refresh' content='0;URL=$url'&gt;"</string>
 	<key>outputLocation</key>
 	<string>newWindow</string>
 	<key>scope</key>
-	<string>source.java-processing</string>
+	<string>source.processing</string>
 	<key>uuid</key>
 	<string>44714224-FDF6-476E-BDB3-C13D7EB94C53</string>
 	<key>version</key>
-	<integer>2</integer>
+	<string>2</string>
 </dict>
 </plist>

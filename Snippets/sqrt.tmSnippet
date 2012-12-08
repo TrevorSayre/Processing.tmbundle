@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>sqrt</string>
 	<key>scope</key>
-	<string>source.java-processing</string>
+	<string>source.processing</string>
 	<key>tabTrigger</key>
 	<string>sqrt</string>
 	<key>uuid</key>

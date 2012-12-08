@@ -32,7 +32,8 @@ end
 
 TextMate.exit_insert_snippet( "beginShape(#{mode_list[index]});
 vertex(${1:x}, ${2:y}${4:, ${3:z}});
-endShape();" )</string>
+endShape();" )
+</string>
 	<key>fallbackInput</key>
 	<string>word</string>
 	<key>input</key>
@@ -42,7 +43,7 @@ endShape();" )</string>
 	<key>output</key>
 	<string>discard</string>
 	<key>scope</key>
-	<string>source.java-processing</string>
+	<string>source.processing</string>
 	<key>tabTrigger</key>
 	<string>beginshape</string>
 	<key>uuid</key>

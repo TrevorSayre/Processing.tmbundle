@@ -31,7 +31,8 @@ if index == nil
 	TextMate.exit_insert_text( "import" )
 end
 
-TextMate.exit_insert_snippet( "import #{import_list[index]};" )</string>
+TextMate.exit_insert_snippet( "import #{import_list[index]};" )
+</string>
 	<key>fallbackInput</key>
 	<string>word</string>
 	<key>input</key>
@@ -41,7 +42,7 @@ TextMate.exit_insert_snippet( "import #{import_list[index]};" )</string>
 	<key>output</key>
 	<string>discard</string>
 	<key>scope</key>
-	<string>source.java-processing</string>
+	<string>source.processing</string>
 	<key>tabTrigger</key>
 	<string>import</string>
 	<key>uuid</key>

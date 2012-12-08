@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>glGetError</string>
 	<key>scope</key>
-	<string>source.java-processing</string>
+	<string>source.processing</string>
 	<key>tabTrigger</key>
 	<string>glgeterror</string>
 	<key>uuid</key>

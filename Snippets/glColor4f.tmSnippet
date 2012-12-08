@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>glColor4f</string>
 	<key>scope</key>
-	<string>source.java-processing</string>
+	<string>source.processing</string>
 	<key>tabTrigger</key>
 	<string>glcolor4f</string>
 	<key>uuid</key>

@@ -8,7 +8,7 @@ pg = createGraphics(${5:${1:width}, ${2:height}${4:, ${3:applet}}});</string>
 	<key>name</key>
 	<string>PGraphics</string>
 	<key>scope</key>
-	<string>source.java-processing</string>
+	<string>source.processing</string>
 	<key>tabTrigger</key>
 	<string>pgraphics</string>
 	<key>uuid</key>

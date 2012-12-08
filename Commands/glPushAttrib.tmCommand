@@ -23,7 +23,8 @@ index = TextMate::UI.menu(cap_list)
 TextMate.exit_insert_snippet( "// http://www.opengl.org/documentation/specs/man_pages/hardcopy/GL/html/gl/pushattrib.html
 gl.glPushAttrib(#{cap_list[index]});
 ${1}
-gl.glPopAttrib();" )</string>
+gl.glPopAttrib();" )
+</string>
 	<key>fallbackInput</key>
 	<string>word</string>
 	<key>input</key>
@@ -33,7 +34,7 @@ gl.glPopAttrib();" )</string>
 	<key>output</key>
 	<string>discard</string>
 	<key>scope</key>
-	<string>source.java-processing</string>
+	<string>source.processing</string>
 	<key>tabTrigger</key>
 	<string>glpushattrib</string>
 	<key>uuid</key>

@@ -8,7 +8,7 @@ gl.setSwapInterval(${1:interval});</string>
 	<key>name</key>
 	<string>setSwapInterval</string>
 	<key>scope</key>
-	<string>source.java-processing</string>
+	<string>source.processing</string>
 	<key>tabTrigger</key>
 	<string>glswapinterval</string>
 	<key>uuid</key>

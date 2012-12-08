@@ -8,7 +8,7 @@ gl.glBindBuffer(GL.GL_ARRAY_BUFFER, ${1:0});</string>
 	<key>name</key>
 	<string>glBindBuffer</string>
 	<key>scope</key>
-	<string>source.java-processing</string>
+	<string>source.processing</string>
 	<key>tabTrigger</key>
 	<string>glbindbuffer</string>
 	<key>uuid</key>

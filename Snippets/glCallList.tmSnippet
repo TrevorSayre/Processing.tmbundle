@@ -8,7 +8,7 @@ gl.glCallList(${1:list});</string>
 	<key>name</key>
 	<string>glCallList</string>
 	<key>scope</key>
-	<string>source.java-processing</string>
+	<string>source.processing</string>
 	<key>tabTrigger</key>
 	<string>glcalllist</string>
 	<key>uuid</key>

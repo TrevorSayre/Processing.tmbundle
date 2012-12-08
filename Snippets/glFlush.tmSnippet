@@ -8,7 +8,7 @@ gl.glFlush();</string>
 	<key>name</key>
 	<string>glFlush</string>
 	<key>scope</key>
-	<string>source.java-processing</string>
+	<string>source.processing</string>
 	<key>tabTrigger</key>
 	<string>glflush</string>
 	<key>uuid</key>

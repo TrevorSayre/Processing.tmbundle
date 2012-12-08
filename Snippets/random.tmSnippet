@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>random</string>
 	<key>scope</key>
-	<string>source.java-processing</string>
+	<string>source.processing</string>
 	<key>tabTrigger</key>
 	<string>random</string>
 	<key>uuid</key>

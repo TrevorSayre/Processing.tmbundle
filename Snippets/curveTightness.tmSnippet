@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>curveTightness</string>
 	<key>scope</key>
-	<string>source.java-processing</string>
+	<string>source.processing</string>
 	<key>tabTrigger</key>
 	<string>curve</string>
 	<key>uuid</key>

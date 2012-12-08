@@ -8,7 +8,7 @@ gl.glScalef(${1:x}, ${2:y}, ${3:z});</string>
 	<key>name</key>
 	<string>glScalef</string>
 	<key>scope</key>
-	<string>source.java-processing</string>
+	<string>source.processing</string>
 	<key>tabTrigger</key>
 	<string>glscalef</string>
 	<key>uuid</key>

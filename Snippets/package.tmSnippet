@@ -14,7 +14,7 @@ package ${4:package};</string>
 	<key>name</key>
 	<string>package</string>
 	<key>scope</key>
-	<string>source.java-processing</string>
+	<string>source.processing</string>
 	<key>tabTrigger</key>
 	<string>package</string>
 	<key>uuid</key>

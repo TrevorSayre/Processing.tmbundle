@@ -8,7 +8,7 @@ gl.glDeleteBuffers(${1:4}, ${2:bufferObjects});</string>
 	<key>name</key>
 	<string>glDeleteBuffers</string>
 	<key>scope</key>
-	<string>source.java-processing</string>
+	<string>source.processing</string>
 	<key>tabTrigger</key>
 	<string>gldeletebuffers</string>
 	<key>uuid</key>

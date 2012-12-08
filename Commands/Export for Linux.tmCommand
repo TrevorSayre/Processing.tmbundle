@@ -36,10 +36,10 @@ fi
 	<key>outputLocation</key>
 	<string>toolTip</string>
 	<key>scope</key>
-	<string>source.java-processing</string>
+	<string>source.processing</string>
 	<key>uuid</key>
 	<string>EAC1B350-24D1-45E6-AF1B-38826BB6C3AC</string>
 	<key>version</key>
-	<integer>2</integer>
+	<string>2</string>
 </dict>
 </plist>

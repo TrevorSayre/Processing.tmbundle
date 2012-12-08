@@ -9,7 +9,7 @@ popMatrix();</string>
 	<key>name</key>
 	<string>pushMatrix</string>
 	<key>scope</key>
-	<string>source.java-processing</string>
+	<string>source.processing</string>
 	<key>tabTrigger</key>
 	<string>matrix</string>
 	<key>uuid</key>

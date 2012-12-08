@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>glClear</string>
 	<key>scope</key>
-	<string>source.java-processing</string>
+	<string>source.processing</string>
 	<key>tabTrigger</key>
 	<string>glclear</string>
 	<key>uuid</key>

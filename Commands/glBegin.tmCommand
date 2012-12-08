@@ -30,7 +30,8 @@ index = TextMate::UI.menu(mode_list)
 TextMate.exit_insert_snippet( "//delimit the vertices of a primitive or a group of like primitives
 gl.glBegin(#{mode_list[index]});
 ${1}
-gl.glEnd();" )</string>
+gl.glEnd();" )
+</string>
 	<key>fallbackInput</key>
 	<string>word</string>
 	<key>input</key>
@@ -40,7 +41,7 @@ gl.glEnd();" )</string>
 	<key>output</key>
 	<string>discard</string>
 	<key>scope</key>
-	<string>source.java-processing</string>
+	<string>source.processing</string>
 	<key>tabTrigger</key>
 	<string>glbegin</string>
 	<key>uuid</key>

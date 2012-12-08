@@ -10,7 +10,8 @@ echo "\"New Sketch\" is not yet implemented.&lt;br&gt;"
 echo "For now, follow these steps:&lt;br&gt;"
 echo "&lt;ol&gt;&lt;li&gt;Create a new project folder and give it a name (e.g. NewSketch)&lt;/li&gt;"
 echo "&lt;li&gt;Create a new file and give it the same name plus .pde (e.g. NewSketch.pde)&lt;/li&gt;"
-echo "&lt;li&gt;Open the new file in TextMate.&lt;/li&gt;&lt;/ol&gt;"</string>
+echo "&lt;li&gt;Open the new file in TextMate.&lt;/li&gt;&lt;/ol&gt;"
+</string>
 	<key>input</key>
 	<string>none</string>
 	<key>inputFormat</key>
@@ -26,10 +27,10 @@ echo "&lt;li&gt;Open the new file in TextMate.&lt;/li&gt;&lt;/ol&gt;"</string>
 	<key>outputLocation</key>
 	<string>newWindow</string>
 	<key>scope</key>
-	<string>source.java-processing</string>
+	<string>source.processing</string>
 	<key>uuid</key>
 	<string>22781A87-5AA7-4429-9764-F6624CB79AEB</string>
 	<key>version</key>
-	<integer>2</integer>
+	<string>2</string>
 </dict>
 </plist>

@@ -29,7 +29,8 @@ if index == nil
 	TextMate.exit_insert_snippet( "filter(GRAY);" )
 end
 
-TextMate.exit_insert_snippet( "filter(#{mode_list[index]}${2:, ${1:level}});" )</string>
+TextMate.exit_insert_snippet( "filter(#{mode_list[index]}${2:, ${1:level}});" )
+</string>
 	<key>fallbackInput</key>
 	<string>word</string>
 	<key>input</key>
@@ -39,7 +40,7 @@ TextMate.exit_insert_snippet( "filter(#{mode_list[index]}${2:, ${1:level}});" )<
 	<key>output</key>
 	<string>discard</string>
 	<key>scope</key>
-	<string>source.java-processing</string>
+	<string>source.processing</string>
 	<key>tabTrigger</key>
 	<string>filter</string>
 	<key>uuid</key>

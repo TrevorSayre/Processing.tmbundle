@@ -9,7 +9,7 @@ break;	</string>
 	<key>name</key>
 	<string>default</string>
 	<key>scope</key>
-	<string>source.java-processing</string>
+	<string>source.processing</string>
 	<key>tabTrigger</key>
 	<string>default</string>
 	<key>uuid</key>

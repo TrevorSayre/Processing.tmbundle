@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>protected var</string>
 	<key>scope</key>
-	<string>source.java-processing</string>
+	<string>source.processing</string>
 	<key>tabTrigger</key>
 	<string>protected</string>
 	<key>uuid</key>

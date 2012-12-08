@@ -26,7 +26,7 @@ gl.glBufferData(GL.GL_ARRAY_BUFFER, vertexCount * numCoordinates * BufferUtil.SI
 	<key>name</key>
 	<string>glGenBuffers</string>
 	<key>scope</key>
-	<string>source.java-processing</string>
+	<string>source.processing</string>
 	<key>tabTrigger</key>
 	<string>glgenbuffers</string>
 	<key>uuid</key>

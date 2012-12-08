@@ -29,7 +29,8 @@ valign_mode_list = [
 
 valign_index = TextMate::UI.menu(valign_mode_list)
 
-TextMate.exit_insert_snippet( "textAlign(#{align_mode_list[align_index]}, #{valign_mode_list[valign_index]});" )</string>
+TextMate.exit_insert_snippet( "textAlign(#{align_mode_list[align_index]}, #{valign_mode_list[valign_index]});" )
+</string>
 	<key>fallbackInput</key>
 	<string>word</string>
 	<key>input</key>
@@ -39,7 +40,7 @@ TextMate.exit_insert_snippet( "textAlign(#{align_mode_list[align_index]}, #{vali
 	<key>output</key>
 	<string>discard</string>
 	<key>scope</key>
-	<string>source.java-processing</string>
+	<string>source.processing</string>
 	<key>tabTrigger</key>
 	<string>text</string>
 	<key>uuid</key>

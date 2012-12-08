@@ -9,7 +9,7 @@
 	<key>name</key>
 	<string>keyReleased</string>
 	<key>scope</key>
-	<string>source.java-processing</string>
+	<string>source.processing</string>
 	<key>tabTrigger</key>
 	<string>key</string>
 	<key>uuid</key>

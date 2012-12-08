@@ -23,7 +23,8 @@ if index == nil
 	TextMate.exit_insert_snippet( "colorMode(${1:});" )
 end
 
-TextMate.exit_insert_snippet( "colorMode(#{mode_list[index]}${8:, ${3:range1}, ${4:range2}, ${5:range3}${7:, ${6:range}}});" )</string>
+TextMate.exit_insert_snippet( "colorMode(#{mode_list[index]}${8:, ${3:range1}, ${4:range2}, ${5:range3}${7:, ${6:range}}});" )
+</string>
 	<key>fallbackInput</key>
 	<string>word</string>
 	<key>input</key>
@@ -33,7 +34,7 @@ TextMate.exit_insert_snippet( "colorMode(#{mode_list[index]}${8:, ${3:range1}, $
 	<key>output</key>
 	<string>discard</string>
 	<key>scope</key>
-	<string>source.java-processing</string>
+	<string>source.processing</string>
 	<key>tabTrigger</key>
 	<string>colormode</string>
 	<key>uuid</key>

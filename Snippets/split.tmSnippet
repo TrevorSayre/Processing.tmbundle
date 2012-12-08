@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>split</string>
 	<key>scope</key>
-	<string>source.java-processing</string>
+	<string>source.processing</string>
 	<key>tabTrigger</key>
 	<string>split</string>
 	<key>uuid</key>

@@ -8,7 +8,7 @@ gl.glDepthMask(${1:flag});</string>
 	<key>name</key>
 	<string>glDepthMask</string>
 	<key>scope</key>
-	<string>source.java-processing</string>
+	<string>source.processing</string>
 	<key>tabTrigger</key>
 	<string>gldepthmask</string>
 	<key>uuid</key>

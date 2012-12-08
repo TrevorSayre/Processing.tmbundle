@@ -10,7 +10,7 @@ gl.glPopMatrix();</string>
 	<key>name</key>
 	<string>glPushMatrix</string>
 	<key>scope</key>
-	<string>source.java-processing</string>
+	<string>source.processing</string>
 	<key>tabTrigger</key>
 	<string>glpushmatrix</string>
 	<key>uuid</key>

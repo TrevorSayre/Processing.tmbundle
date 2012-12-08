@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>TWO PI</string>
 	<key>scope</key>
-	<string>source.java-processing</string>
+	<string>source.processing</string>
 	<key>tabTrigger</key>
 	<string>pi</string>
 	<key>uuid</key>

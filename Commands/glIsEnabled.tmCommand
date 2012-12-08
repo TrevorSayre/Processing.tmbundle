@@ -22,7 +22,8 @@ cap_list = [
 
 index = TextMate::UI.menu(cap_list)
 
-TextMate.exit_insert_snippet( "gl.glIsEnabled(#{cap_list[index]});" )</string>
+TextMate.exit_insert_snippet( "gl.glIsEnabled(#{cap_list[index]});" )
+</string>
 	<key>fallbackInput</key>
 	<string>word</string>
 	<key>input</key>
@@ -32,7 +33,7 @@ TextMate.exit_insert_snippet( "gl.glIsEnabled(#{cap_list[index]});" )</string>
 	<key>output</key>
 	<string>discard</string>
 	<key>scope</key>
-	<string>source.java-processing</string>
+	<string>source.processing</string>
 	<key>tabTrigger</key>
 	<string>glisenabled</string>
 	<key>uuid</key>

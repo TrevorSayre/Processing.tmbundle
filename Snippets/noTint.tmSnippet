@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>noTint</string>
 	<key>scope</key>
-	<string>source.java-processing</string>
+	<string>source.processing</string>
 	<key>tabTrigger</key>
 	<string>notint</string>
 	<key>uuid</key>

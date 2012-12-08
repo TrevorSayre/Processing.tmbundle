@@ -52,7 +52,8 @@ dfactor__list = [
 valign_index = TextMate::UI.menu(dfactor__list)
 
 TextMate.exit_insert_snippet( "//defines the operation of blending when it is enabled
-gl.glBlendFunc(#{sfactor__list[align_index]}, #{dfactor__list[valign_index]});" )</string>
+gl.glBlendFunc(#{sfactor__list[align_index]}, #{dfactor__list[valign_index]});" )
+</string>
 	<key>fallbackInput</key>
 	<string>word</string>
 	<key>input</key>
@@ -62,7 +63,7 @@ gl.glBlendFunc(#{sfactor__list[align_index]}, #{dfactor__list[valign_index]});" 
 	<key>output</key>
 	<string>discard</string>
 	<key>scope</key>
-	<string>source.java-processing</string>
+	<string>source.processing</string>
 	<key>tabTrigger</key>
 	<string>glblendfunc</string>
 	<key>uuid</key>

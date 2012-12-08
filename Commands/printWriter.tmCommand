@@ -25,7 +25,8 @@ if index == nil
 	TextMate.exit_insert_snippet( "output.println();" )
 end
 
-TextMate.exit_insert_snippet( "${1:output}.#{mode_list[index]}(${2:});" )</string>
+TextMate.exit_insert_snippet( "${1:output}.#{mode_list[index]}(${2:});" )
+</string>
 	<key>fallbackInput</key>
 	<string>word</string>
 	<key>input</key>
@@ -35,7 +36,7 @@ TextMate.exit_insert_snippet( "${1:output}.#{mode_list[index]}(${2:});" )</strin
 	<key>output</key>
 	<string>discard</string>
 	<key>scope</key>
-	<string>source.java-processing</string>
+	<string>source.processing</string>
 	<key>tabTrigger</key>
 	<string>file</string>
 	<key>uuid</key>

@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>mousePressed</string>
 	<key>scope</key>
-	<string>source.java-processing</string>
+	<string>source.processing</string>
 	<key>tabTrigger</key>
 	<string>mouse</string>
 	<key>uuid</key>

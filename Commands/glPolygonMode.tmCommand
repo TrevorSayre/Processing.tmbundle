@@ -29,7 +29,8 @@ mode__list = [
 valign_index = TextMate::UI.menu(mode__list)
 
 TextMate.exit_insert_snippet( "//defines the operation of blending when it is enabled
-gl.glPolygonMode(#{face__list[align_index]}, #{mode__list[valign_index]});" )</string>
+gl.glPolygonMode(#{face__list[align_index]}, #{mode__list[valign_index]});" )
+</string>
 	<key>fallbackInput</key>
 	<string>word</string>
 	<key>input</key>
@@ -39,7 +40,7 @@ gl.glPolygonMode(#{face__list[align_index]}, #{mode__list[valign_index]});" )</s
 	<key>output</key>
 	<string>discard</string>
 	<key>scope</key>
-	<string>source.java-processing</string>
+	<string>source.processing</string>
 	<key>tabTrigger</key>
 	<string>glpolygonmode</string>
 	<key>uuid</key>

@@ -12,7 +12,7 @@
 	<key>name</key>
 	<string>doc - class</string>
 	<key>scope</key>
-	<string>source.java-processing</string>
+	<string>source.processing</string>
 	<key>tabTrigger</key>
 	<string>doc</string>
 	<key>uuid</key>

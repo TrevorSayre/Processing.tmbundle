@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>emissive</string>
 	<key>scope</key>
-	<string>source.java-processing</string>
+	<string>source.processing</string>
 	<key>tabTrigger</key>
 	<string>material</string>
 	<key>uuid</key>

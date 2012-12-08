@@ -9,7 +9,7 @@ pgl.endGL();</string>
 	<key>name</key>
 	<string>beginGL</string>
 	<key>scope</key>
-	<string>source.java-processing</string>
+	<string>source.processing</string>
 	<key>tabTrigger</key>
 	<string>begingl</string>
 	<key>uuid</key>

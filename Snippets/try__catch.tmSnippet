@@ -11,7 +11,7 @@
 	<key>name</key>
 	<string>try..catch</string>
 	<key>scope</key>
-	<string>source.java-processing</string>
+	<string>source.processing</string>
 	<key>tabTrigger</key>
 	<string>try</string>
 	<key>uuid</key>

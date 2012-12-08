@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>shininess</string>
 	<key>scope</key>
-	<string>source.java-processing</string>
+	<string>source.processing</string>
 	<key>tabTrigger</key>
 	<string>material</string>
 	<key>uuid</key>

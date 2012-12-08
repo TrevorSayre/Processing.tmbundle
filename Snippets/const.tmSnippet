@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>const</string>
 	<key>scope</key>
-	<string>source.java-processing</string>
+	<string>source.processing</string>
 	<key>tabTrigger</key>
 	<string>const</string>
 	<key>uuid</key>

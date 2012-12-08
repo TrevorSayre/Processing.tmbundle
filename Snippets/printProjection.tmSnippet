@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>printProjection</string>
 	<key>scope</key>
-	<string>source.java-processing</string>
+	<string>source.processing</string>
 	<key>tabTrigger</key>
 	<string>camera</string>
 	<key>uuid</key>

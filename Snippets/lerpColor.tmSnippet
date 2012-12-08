@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>lerpColor</string>
 	<key>scope</key>
-	<string>source.java-processing</string>
+	<string>source.processing</string>
 	<key>tabTrigger</key>
 	<string>lerpcolor</string>
 	<key>uuid</key>

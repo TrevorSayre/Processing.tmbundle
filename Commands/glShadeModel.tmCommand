@@ -20,7 +20,8 @@ cap_list = [
 index = TextMate::UI.menu(cap_list)
 
 TextMate.exit_insert_snippet( "// enable or disable server-side GL capabilities
-gl.glShadeModel(#{cap_list[index]});" )</string>
+gl.glShadeModel(#{cap_list[index]});" )
+</string>
 	<key>fallbackInput</key>
 	<string>word</string>
 	<key>input</key>
@@ -30,7 +31,7 @@ gl.glShadeModel(#{cap_list[index]});" )</string>
 	<key>output</key>
 	<string>discard</string>
 	<key>scope</key>
-	<string>source.java-processing</string>
+	<string>source.processing</string>
 	<key>tabTrigger</key>
 	<string>glshademodel</string>
 	<key>uuid</key>

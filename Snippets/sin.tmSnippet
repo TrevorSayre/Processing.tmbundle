@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>sin</string>
 	<key>scope</key>
-	<string>source.java-processing</string>
+	<string>source.processing</string>
 	<key>tabTrigger</key>
 	<string>sin</string>
 	<key>uuid</key>

@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>@public</string>
 	<key>scope</key>
-	<string>source.java-processing</string>
+	<string>source.processing</string>
 	<key>tabTrigger</key>
 	<string>@</string>
 	<key>uuid</key>

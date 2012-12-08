@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>glVertex2f</string>
 	<key>scope</key>
-	<string>source.java-processing</string>
+	<string>source.processing</string>
 	<key>tabTrigger</key>
 	<string>glvertex2f</string>
 	<key>uuid</key>

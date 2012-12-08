@@ -21,7 +21,8 @@ index = TextMate::UI.menu(mode_list)
 
 TextMate.exit_insert_snippet( "//display lists are groups of GL commands that have been stored for subsequent execution
 gl.glNewList(${1:list}, #{mode_list[index]});
-gl.glEndList();" )</string>
+gl.glEndList();" )
+</string>
 	<key>fallbackInput</key>
 	<string>word</string>
 	<key>input</key>
@@ -31,7 +32,7 @@ gl.glEndList();" )</string>
 	<key>output</key>
 	<string>discard</string>
 	<key>scope</key>
-	<string>source.java-processing</string>
+	<string>source.processing</string>
 	<key>tabTrigger</key>
 	<string>glnewlist</string>
 	<key>uuid</key>
