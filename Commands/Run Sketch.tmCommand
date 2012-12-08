@@ -44,7 +44,21 @@ fi
 	<key>outputLocation</key>
 	<string>newWindow</string>
 	<key>requiredCommands</key>
-	<string>locations/usr/bin/processing-java$HOME/processing-javamoreInfoURLhttp://wiki.processing.org/w/Command_Linecommandprocessing-javavariableTM_PROCESSING</string>
+		<array>
+			<dict>
+				<key>command</key>
+				<string>processing-java</string>
+				<key>variable</key>
+				<string>TM_PROCESSING</string>
+				<key>locations</key>
+					<array>
+						<string>/usr/bin/processing-java</string>
+						<string>$HOME/processing-java</string>
+					</array>
+				<key>moreInfoURL</key>
+				<string>http://wiki.processing.org/w/Command_Line</string>
+			</dict>
+		</array>
 	<key>scope</key>
 	<string>source.processing</string>
 	<key>uuid</key>

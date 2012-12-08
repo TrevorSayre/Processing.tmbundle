@@ -16,7 +16,7 @@ else
 fi
 </string>
 	<key>input</key>
-	<string>none</string>
+	<string>document</string>
 	<key>inputFormat</key>
 	<string>text</string>
 	<key>name</key>
@@ -28,12 +28,26 @@ fi
 	<key>outputLocation</key>
 	<string>toolTip</string>
 	<key>requiredCommands</key>
-	<string>variableTM_PROCESSINGmoreInfoURLhttp://wiki.processing.org/w/Command_Linecommandprocessing-javalocations/usr/bin/processing-java$HOME/processing-java</string>
+		<array>
+			<dict>
+				<key>command</key>
+				<string>processing-java</string>
+				<key>variable</key>
+				<string>TM_PROCESSING</string>
+				<key>locations</key>
+					<array>
+						<string>/usr/bin/processing-java</string>
+						<string>$HOME/processing-java</string>
+					</array>
+				<key>moreInfoURL</key>
+				<string>http://wiki.processing.org/w/Command_Line</string>
+			</dict>
+		</array>
 	<key>scope</key>
 	<string>source.processing</string>
 	<key>uuid</key>
 	<string>EA4FBD40-DC68-4D66-88CA-CB2B80D63677</string>
 	<key>version</key>
-	<string>2</string>
+	<integer>2</integer>
 </dict>
 </plist>
