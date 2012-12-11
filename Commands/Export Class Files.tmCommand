@@ -8,34 +8,29 @@
   <string>#!/bin/bash
 if [ -z "$TM_FILEPATH" ]
   then
-  TMP_NAME="processing_$$_temp"
-  TMP_DIR="${TMPDIR:-/tmp}$TMP_NAME"
-  TMP_PATH="$TMP_DIR/$TMP_NAME.pde"
-  mkdir "$TMP_DIR" &amp;&amp; cat &gt; "$TMP_PATH"
-  touch "$TMP_DIR/$TMP_NAME.log"
-  open -a "console.app" "$TMP_DIR/$TMP_NAME.log"
-  $TM_PROCESSING --force --sketch=$TMP_DIR --output=$TMP_DIR/compiled --run &gt; $TMP_DIR/$TMP_NAME.log 2&gt;&amp;1
-  rm -rf "$TMP_DIR"
+  echo "ERROR: Project must be saved before exporting"
 else
-  dir_name=`basename "$TM_PROJECT_DIRECTORY"`
+  dir_name=`basename "${TM_PROJECT_DIRECTORY}"`
   if [ -e "$dir_name.pde" ]
     then
-    touch $TM_PROJECT_DIRECTORY/$dir_name.log
-    open -a "console.app" "$TM_PROJECT_DIRECTORY/$dir_name.log"
-    $TM_PROCESSING --force --sketch=$TM_PROJECT_DIRECTORY --output=$TM_PROJECT_DIRECTORY/compiled --run &gt; $TM_PROJECT_DIRECTORY/$dir_name.log 2&gt;&amp;1
+    $TM_PROCESSING --force --sketch=${TM_PROJECT_DIRECTORY} --output=${TM_PROJECT_DIRECTORY}/export/build --build
+    if [ -e "export/applet/$dir_name.class" ]
+      then 
+      open $TM_PROJECT_DIRECTORY/export/build
+    fi
   else
-    echo "ERROR: $TM_PROJECT_DIRECTORY must contain a file named $dir_name.pde"
+    echo "ERROR: ${TM_PROJECT_DIRECTORY} must contain a file named $dir_name.pde"
   fi
 fi
   </string>
   <key>input</key>
-  <string>document</string>
+  <string>none</string>
   <key>inputFormat</key>
   <string>text</string>
   <key>keyEquivalent</key>
-  <string>@r</string>
+  <string>@b</string>
   <key>name</key>
-  <string>Run Sketch</string>
+  <string>Export Class Files</string>
   <key>outputCaret</key>
   <string>afterOutput</string>
   <key>outputFormat</key>
@@ -61,7 +56,7 @@ fi
   <key>scope</key>
   <string>source.processing</string>
   <key>uuid</key>
-  <string>87D057B4-233C-4B34-8680-647819E1E439</string>
+  <string>EA4FBD40-DC68-4D66-88CA-CB2B80D63677</string>
   <key>version</key>
   <integer>2</integer>
 </dict>

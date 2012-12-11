@@ -2,10 +2,13 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>beforeRunningCommand</key>
-	<string>nop</string>
-	<key>command</key>
-	<string>#!/bin/bash
+  <key>beforeRunningCommand</key>
+  <string>nop</string>
+  <key>command</key>
+  <string>#!/bin/bash
+# TODO: get TM2 to allow interactive input
+# TODO: ask user what to name new sketch
+# TODO: create new sektch folder and sketch file
 echo "\"New Sketch\" is not yet implemented.&lt;br&gt;"
 echo "For now, follow these steps:&lt;br&gt;"
 echo "&lt;ol&gt;&lt;li&gt;Create a new project folder and give it a name (e.g. NewSketch)&lt;/li&gt;"
@@ -13,26 +16,26 @@ echo "&lt;li&gt;Create a new file and give it the same name plus .pde (e.g. NewS
 echo "&lt;li&gt;Open the new file in TextMate.&lt;/li&gt;&lt;/ol&gt;"
 echo "It is recommending to keep your project folders in:&lt;br&gt;"
 echo "$HOME/Documents/Processing"
-</string>
-	<key>input</key>
-	<string>none</string>
-	<key>inputFormat</key>
-	<string>text</string>
-	<key>keyEquivalent</key>
-	<string>@N</string>
-	<key>name</key>
-	<string>New Sketch</string>
-	<key>outputCaret</key>
-	<string>afterOutput</string>
-	<key>outputFormat</key>
-	<string>html</string>
-	<key>outputLocation</key>
-	<string>newWindow</string>
-	<key>scope</key>
-	<string>source.processing</string>
-	<key>uuid</key>
-	<string>22781A87-5AA7-4429-9764-F6624CB79AEB</string>
-	<key>version</key>
-	<string>2</string>
+  </string>
+  <key>input</key>
+  <string>none</string>
+  <key>inputFormat</key>
+  <string>text</string>
+  <key>keyEquivalent</key>
+  <string>@N</string>
+  <key>name</key>
+  <string>New Sketch</string>
+  <key>outputCaret</key>
+  <string>afterOutput</string>
+  <key>outputFormat</key>
+  <string>html</string>
+  <key>outputLocation</key>
+  <string>newWindow</string>
+  <key>scope</key>
+  <string>source.processing</string>
+  <key>uuid</key>
+  <string>22781A87-5AA7-4429-9764-F6624CB79AEB</string>
+  <key>version</key>
+  <integer>2</integer>
 </dict>
 </plist>
