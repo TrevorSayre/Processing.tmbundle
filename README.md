@@ -8,6 +8,7 @@ Already this bundle can:
 * Determine if you installed processing-java globally or to your home folder
 * Run your saved Processing sketch
 * Run an unsaved scratch Processing sketch
+* Launches Console.app and logs console output to a log file
 * Present your saved Processing sketch
 * Export your Processing sketch as each of the following
   * Java Class Files
