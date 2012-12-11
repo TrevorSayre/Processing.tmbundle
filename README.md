@@ -7,15 +7,16 @@ This is a bundle for [TextMate 2](https://github.com/textmate/textmate). Now you
 Already this bundle can:
 * Determine if you installed processing-java globally or to your home folder
 * Run your saved Processing sketch
+* Run an unsaved scratch Processing sketch
 * Present your saved Processing sketch
 * Export your Processing sketch as each of the following
-  * Java Applet
+  * Java Class Files
   * Mac OS X App
   * Windows Executable
   * Linux Binary
 * Provide tons of snippets and auto completions
 
-## Shoulders of Giants
+## Resources
 
 TextMate 2 currently inclues a Processing bundle:  
 https://github.com/textmate/processing.tmbundle
@@ -23,7 +24,7 @@ https://github.com/textmate/processing.tmbundle
 There also exists the once excellent Processing bundle for TextMate by peon:  
 https://github.com/peon/processing.tmbundle
 
-The included bundle is sparse and the bundle by peon is massively out of date. I will be combining ideas from both and developing an up-to-date approach to Processing sketch development in TextMate 2.
+The bundle included with TextMate 2 is sparse (and doesn't even work on my setup), and the bundle by peon is massively out of date. I am combining ideas from both and developing an up-to-date approach to Processing sketch development in TextMate 2.
 
 ## Instructions
 
