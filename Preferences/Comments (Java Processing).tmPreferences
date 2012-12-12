@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>name</key>
-	<string>Comments (Java Processing)</string>
+	<string>Comment</string>
 	<key>scope</key>
 	<string>source.processing</string>
 	<key>settings</key>

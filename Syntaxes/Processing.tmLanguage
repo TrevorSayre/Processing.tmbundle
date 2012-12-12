@@ -1336,8 +1336,6 @@
 			</array>
 		</dict>
 	</dict>
-	<key>scope</key>
-	<string>source.processing</string>
 	<key>scopeName</key>
 	<string>source.processing</string>
 	<key>uuid</key>
