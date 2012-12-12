@@ -30,7 +30,7 @@ fi
   <key>inputFormat</key>
   <string>text</string>
   <key>keyEquivalent</key>
-  <string>@P</string>
+  <string>@R</string>
   <key>name</key>
   <string>Present Sketch</string>
   <key>outputCaret</key>
