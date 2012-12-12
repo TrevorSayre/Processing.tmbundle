@@ -3,7 +3,8 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>break ${1:label};</string>
+	<string>break ${1:label};
+$0</string>
 	<key>name</key>
 	<string>break</string>
 	<key>scope</key>

@@ -3,13 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>byte ${1:b} ${6:= ${3:127}};</string>
+	<string>byte ${1:t} ${6:= ${3:127}};
+$0</string>
 	<key>name</key>
 	<string>byte</string>
 	<key>scope</key>
 	<string>source.processing</string>
 	<key>tabTrigger</key>
-	<string>byte</string>
+	<string>b</string>
 	<key>uuid</key>
 	<string>C6F79C4B-2EEF-4B83-BA4E-CE9A7F334091</string>
 </dict>

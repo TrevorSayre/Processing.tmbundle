@@ -3,13 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>int ${1:f} ${6:= ${3:0}};</string>
+	<string>int ${1:i}${6: = ${3:0}};
+$0</string>
 	<key>name</key>
 	<string>int</string>
 	<key>scope</key>
 	<string>source.processing</string>
 	<key>tabTrigger</key>
-	<string>int</string>
+	<string>i</string>
 	<key>uuid</key>
 	<string>A7328EC2-8C75-4964-B8E5-893C41966617</string>
 </dict>

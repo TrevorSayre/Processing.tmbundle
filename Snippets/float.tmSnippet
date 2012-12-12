@@ -3,13 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>float ${1:f} ${6:= ${3:0.0f}};</string>
+	<string>float ${1:f} ${6:= ${3:0.0f}};
+$0</string>
 	<key>name</key>
 	<string>float</string>
 	<key>scope</key>
 	<string>source.processing</string>
 	<key>tabTrigger</key>
-	<string>float</string>
+	<string>f</string>
 	<key>uuid</key>
 	<string>6B45CF3B-367A-4E1B-91D4-E58A1AFBB90F</string>
 </dict>

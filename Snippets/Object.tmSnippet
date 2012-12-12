@@ -9,7 +9,7 @@
 	<key>scope</key>
 	<string>source.processing</string>
 	<key>tabTrigger</key>
-	<string>object</string>
+	<string>o</string>
 	<key>uuid</key>
 	<string>2214C94B-144D-486F-9BF3-A15685C8067E</string>
 </dict>
