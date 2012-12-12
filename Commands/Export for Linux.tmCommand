@@ -12,18 +12,18 @@ if [ -z "$TM_FILEPATH" ]
   then
   echo "ERROR: Project must be saved before exporting"
 else
-  dir_name=`basename "${TM_PROJECT_DIRECTORY}"`
-  if [ -e "$dir_name.pde" ]
+  DIR=`basename "${TM_PROJECT_DIRECTORY}"`
+  if [ -e "$DIR.pde" ]
     then
     OS="linux"
     BITS="32"
     $TM_PROCESSING --force --sketch=${TM_PROJECT_DIRECTORY} --output=${TM_PROJECT_DIRECTORY}/export/$OS --export --platform="$OS" --bits=$BITS
-    if [ -e "export/$OS/$dir_name" ]
+    if [ -e "export/$OS/$DIR" ]
       then 
       open $TM_PROJECT_DIRECTORY/export/$OS
     fi
   else
-    echo "ERROR: ${TM_PROJECT_DIRECTORY} must contain a file named $dir_name.pde"
+    echo "ERROR: ${TM_PROJECT_DIRECTORY} must contain a file named $DIR.pde"
   fi
 fi
   </string>

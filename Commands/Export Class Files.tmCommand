@@ -10,16 +10,16 @@ if [ -z "$TM_FILEPATH" ]
   then
   echo "ERROR: Project must be saved before exporting"
 else
-  dir_name=`basename "${TM_PROJECT_DIRECTORY}"`
-  if [ -e "$dir_name.pde" ]
+  DIR=`basename "${TM_PROJECT_DIRECTORY}"`
+  if [ -e "$DIR.pde" ]
     then
     $TM_PROCESSING --force --sketch=${TM_PROJECT_DIRECTORY} --output=${TM_PROJECT_DIRECTORY}/export/build --build
-    if [ -e "export/applet/$dir_name.class" ]
+    if [ -e "export/build/$DIR.class" ]
       then 
       open $TM_PROJECT_DIRECTORY/export/build
     fi
   else
-    echo "ERROR: ${TM_PROJECT_DIRECTORY} must contain a file named $dir_name.pde"
+    echo "ERROR: ${TM_PROJECT_DIRECTORY} must contain a file named $DIR.pde"
   fi
 fi
   </string>
