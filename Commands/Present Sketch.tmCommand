@@ -2,64 +2,66 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-  <key>beforeRunningCommand</key>
-  <string>saveModifiedFiles</string>
-  <key>command</key>
-  <string>#!/bin/bash
+	<key>beforeRunningCommand</key>
+	<string>saveModifiedFiles</string>
+	<key>command</key>
+	<string>#!/bin/bash
+"${TM_PROCESSING:=processing-java}"
+
 if [ -z "$TM_FILEPATH" ]
   then
   TMP_NAME="processing_$$_temp"
   TMP_DIR="${TMPDIR:-/tmp}$TMP_NAME"
   TMP_PATH="$TMP_DIR/$TMP_NAME.pde"
   mkdir "$TMP_DIR" &amp;&amp; cat &gt; "$TMP_PATH"
-  $TM_PROCESSING --force --sketch=$TMP_DIR --output=$TMP_DIR/build --present &gt; /dev/null 2&gt;&amp;1
+  "$TM_PROCESSING" --force --sketch="$TMP_DIR" --output="$TMP_DIR/build" --present &gt; /dev/null 2&gt;&amp;1
   rm -rf "$TMP_DIR"
 else
   DIR=`basename "$TM_PROJECT_DIRECTORY"`
   if [ -e "$DIR.pde" ]
     then
-    $TM_PROCESSING --force --sketch=${TM_PROJECT_DIRECTORY} --output=${TM_PROJECT_DIRECTORY}/build --present &gt; /dev/null 2&gt;&amp;1
-    rm -rf $TM_PROJECT_DIRECTORY/build
+    "$TM_PROCESSING" --force --sketch="$TM_PROJECT_DIRECTORY" --output="$TM_PROJECT_DIRECTORY/build" --present &gt; /dev/null 2&gt;&amp;1
+    rm -rf "$TM_PROJECT_DIRECTORY/build"
   else
     echo "ERROR: $TM_PROJECT_DIRECTORY must contain a file named $DIR.pde"
   fi
 fi
   </string>
-  <key>input</key>
-  <string>document</string>
-  <key>inputFormat</key>
-  <string>text</string>
-  <key>keyEquivalent</key>
-  <string>@R</string>
-  <key>name</key>
-  <string>Present Sketch</string>
-  <key>outputCaret</key>
-  <string>afterOutput</string>
-  <key>outputFormat</key>
-  <string>text</string>
-  <key>outputLocation</key>
-  <string>toolTip</string>
-  <key>requiredCommands</key>
-  <array>
-    <dict>
-      <key>command</key>
-      <string>processing-java</string>
-      <key>locations</key>
-      <array>
-        <string>/usr/bin/processing-java</string>
-        <string>$HOME/processing-java</string>
-      </array>
-      <key>moreInfoURL</key>
-      <string>http://wiki.processing.org/w/Command_Line</string>
-      <key>variable</key>
-      <string>TM_PROCESSING</string>
-    </dict>
-  </array>
-  <key>scope</key>
-  <string>source.processing</string>
-  <key>uuid</key>
-  <string>05D0B5BF-5A74-450A-A52B-58FA98DB7548</string>
-  <key>version</key>
-  <integer>2</integer>
+	<key>input</key>
+	<string>document</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>keyEquivalent</key>
+	<string>@R</string>
+	<key>name</key>
+	<string>Present Sketch</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>discard</string>
+	<key>requiredCommands</key>
+	<array>
+		<dict>
+			<key>command</key>
+			<string>processing-java</string>
+			<key>locations</key>
+			<array>
+				<string>/usr/bin/processing-java</string>
+				<string>$HOME/processing-java</string>
+			</array>
+			<key>moreInfoURL</key>
+			<string>http://wiki.processing.org/w/Command_Line</string>
+			<key>variable</key>
+			<string>TM_PROCESSING</string>
+		</dict>
+	</array>
+	<key>scope</key>
+	<string>source.processing</string>
+	<key>uuid</key>
+	<string>05D0B5BF-5A74-450A-A52B-58FA98DB7548</string>
+	<key>version</key>
+	<integer>2</integer>
 </dict>
 </plist>

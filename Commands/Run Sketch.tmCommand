@@ -6,6 +6,8 @@
 	<string>saveModifiedFiles</string>
 	<key>command</key>
 	<string>#!/bin/bash
+"${TM_PROCESSING:=processing-java}"
+
 if [ -z "$TM_FILEPATH" ]
   then
   TMP_NAME="processing_$$_temp"
@@ -15,18 +17,19 @@ if [ -z "$TM_FILEPATH" ]
   touch "$TMP_DIR/$TMP_NAME.log"
   open -a "Console.app" "$TMP_DIR/$TMP_NAME.log"
   osascript -e "tell application \"System Events\" to tell process \"Console\" to click third button of window named \"All Messages\""
-  $TM_PROCESSING --force --sketch=$TMP_DIR --output=$TMP_DIR/build --run &gt; $TMP_DIR/$TMP_NAME.log 2&gt;&amp;1
+  "$TM_PROCESSING" --force --sketch="$TMP_DIR" --output="$TMP_DIR/build" --run &gt; "$TMP_DIR/$TMP_NAME.log" 2&gt;&amp;1
   rm -rf "$TMP_DIR"
   osascript -e "tell application \"System Events\" to tell process \"Console\" to click first button of window named \"$TMP_NAME.log\""
 else
   DIR=`basename "$TM_PROJECT_DIRECTORY"`
   if [ -e "$DIR.pde" ]
     then
-    touch $TM_PROJECT_DIRECTORY/$DIR.log
+    touch "$TM_PROJECT_DIRECTORY/$DIR.log"
     open -a "Console.app" "$TM_PROJECT_DIRECTORY/$DIR.log"
     osascript -e "tell application \"System Events\" to tell process \"Console\" to click third button of window named \"All Messages\""
-    $TM_PROCESSING --force --sketch=$TM_PROJECT_DIRECTORY --output=$TM_PROJECT_DIRECTORY/build --run &gt; $TM_PROJECT_DIRECTORY/$DIR.log 2&gt;&amp;1
-    rm -rf $TM_PROJECT_DIRECTORY/build
+    "$TM_PROCESSING" --force --sketch="$TM_PROJECT_DIRECTORY" --output="$TM_PROJECT_DIRECTORY"/build --run &gt; "$TM_PROJECT_DIRECTORY/$DIR.log" 2&gt;&amp;1
+    rm -rf "$TM_PROJECT_DIRECTORY/build"
+    #osascript -e "tell application \"System Events\" to set visible of process \"Console\" to false"
   else
     echo "ERROR: $TM_PROJECT_DIRECTORY must contain a file named $DIR.pde"
   fi
@@ -43,9 +46,9 @@ fi
 	<key>outputCaret</key>
 	<string>afterOutput</string>
 	<key>outputFormat</key>
-	<string>text</string>
+	<string>html</string>
 	<key>outputLocation</key>
-	<string>toolTip</string>
+	<string>discard</string>
 	<key>requiredCommands</key>
 	<array>
 		<dict>
