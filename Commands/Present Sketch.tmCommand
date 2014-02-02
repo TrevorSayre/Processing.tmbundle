@@ -6,7 +6,6 @@
 	<string>saveModifiedFiles</string>
 	<key>command</key>
 	<string>#!/bin/bash
-"${TM_PROCESSING:=processing-java}"
 
 if [ -z "$TM_FILEPATH" ]
   then
@@ -14,19 +13,18 @@ if [ -z "$TM_FILEPATH" ]
   TMP_DIR="${TMPDIR:-/tmp}$TMP_NAME"
   TMP_PATH="$TMP_DIR/$TMP_NAME.pde"
   mkdir "$TMP_DIR" &amp;&amp; cat &gt; "$TMP_PATH"
-  "$TM_PROCESSING" --force --sketch="$TMP_DIR" --output="$TMP_DIR/build" --present &gt; /dev/null 2&gt;&amp;1
+  "${TM_PROCESSING:-processing-java}" --force --sketch="$TMP_DIR" --output="$TMP_DIR/build" --present 2&gt;&amp;1
   rm -rf "$TMP_DIR"
 else
   DIR=`basename "$TM_PROJECT_DIRECTORY"`
-  if [ -e "$DIR.pde" ]
+  if [ -e "$TM_PROJECT_DIRECTORY/$DIR.pde" ]
     then
-    "$TM_PROCESSING" --force --sketch="$TM_PROJECT_DIRECTORY" --output="$TM_PROJECT_DIRECTORY/build" --present &gt; /dev/null 2&gt;&amp;1
+    "${TM_PROCESSING:-processing-java}" --force --sketch="$TM_PROJECT_DIRECTORY" --output="$TM_PROJECT_DIRECTORY"/build --present 2&gt;&amp;1
     rm -rf "$TM_PROJECT_DIRECTORY/build"
   else
     echo "ERROR: $TM_PROJECT_DIRECTORY must contain a file named $DIR.pde"
   fi
-fi
-  </string>
+fi</string>
 	<key>input</key>
 	<string>document</string>
 	<key>inputFormat</key>
