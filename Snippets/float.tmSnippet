@@ -10,7 +10,7 @@ $0</string>
 	<key>scope</key>
 	<string>source.processing</string>
 	<key>tabTrigger</key>
-	<string>fl</string>
+	<string>f</string>
 	<key>uuid</key>
 	<string>6B45CF3B-367A-4E1B-91D4-E58A1AFBB90F</string>
 </dict>
