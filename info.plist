@@ -25,7 +25,7 @@
 			<string>36052E78-9D80-4D55-8CA5-EED1ECBF5020</string>
 			<string>------------------------------------</string>
 			<string>EA4FBD40-DC68-4D66-88CA-CB2B80D63677</string>
-			<string>FE011CA9-F363-48FF-B93B-510231FF3472</string>
+			<string>A37C1E0F-2597-4F98-93A3-DAD2BCD41B16</string>
 			<string>------------------------------------</string>
 			<string>185BEE40-3FD6-4F70-8CB1-9CEFFE910805</string>
 			<string>6DE0A27E-455A-4825-89CF-B0791AD8A53D</string>
@@ -569,17 +569,6 @@
 				</array>
 				<key>name</key>
 				<string>OpenGL</string>
-			</dict>
-			<key>FE011CA9-F363-48FF-B93B-510231FF3472</key>
-			<dict>
-				<key>items</key>
-				<array>
-					<string>A37C1E0F-2597-4F98-93A3-DAD2BCD41B16</string>
-					<string>EAC1B350-24D1-45E6-AF1B-38826BB6C3AC</string>
-					<string>36A75C3B-F778-4B81-AACD-33E4BA8C0994</string>
-				</array>
-				<key>name</key>
-				<string>Export Application</string>
 			</dict>
 		</dict>
 	</dict>

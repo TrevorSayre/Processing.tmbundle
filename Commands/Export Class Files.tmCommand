@@ -6,17 +6,16 @@
 	<string>saveModifiedFiles</string>
 	<key>command</key>
 	<string>#!/bin/bash
-"${TM_PROCESSING:=processing-java}"
 
 if [ -z "$TM_FILEPATH" ]
   then
   echo "ERROR: Project must be saved before exporting"
 else
   DIR=`basename "$TM_PROJECT_DIRECTORY"`
-  if [ -e "$DIR.pde" ]
+  if [ -e "$TM_PROJECT_DIRECTORY/$DIR.pde" ]
     then
-    "$TM_PROCESSING" --force --sketch="$TM_PROJECT_DIRECTORY" --output="$TM_PROJECT_DIRECTORY/export/build" --build
-    if [ -e "export/build/$DIR.class" ]
+    "${TM_PROCESSING:-processing-java}" --force --sketch="$TM_PROJECT_DIRECTORY" --output="$TM_PROJECT_DIRECTORY/export/build" --build 2&gt;&amp;1
+    if [ -e "$TM_PROJECT_DIRECTORY/export/build/$DIR.class" ]
       then 
       open "$TM_PROJECT_DIRECTORY/export/build"
     fi

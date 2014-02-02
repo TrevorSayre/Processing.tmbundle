@@ -15,12 +15,12 @@ if [ -z "$TM_FILEPATH" ]
   echo "ERROR: Project must be saved before exporting"
 else
   DIR=`basename "$TM_PROJECT_DIRECTORY"`
-  if [ -e "$DIR.pde" ]
+  if [ -e "$TM_PROJECT_DIRECTORY/$DIR.pde" ]
     then
     OS="macosx"
     BITS="32"
-    "$TM_PROCESSING" --force --sketch="$TM_PROJECT_DIRECTORY" --output="$TM_PROJECT_DIRECTORY/export/$OS" --export --platform="$OS" --bits="$BITS"
-    if [ -e "export/$OS/$DIR.app" ]
+    "$TM_PROCESSING" --force --sketch="$TM_PROJECT_DIRECTORY" --output="$TM_PROJECT_DIRECTORY/export/$OS" --export 2&gt;&amp;1
+    if [ -e "$TM_PROJECT_DIRECTORY/export/$OS/$DIR.app" ]
       then 
       open "$TM_PROJECT_DIRECTORY/export/$OS"
     fi
@@ -36,7 +36,7 @@ fi
 	<key>keyEquivalent</key>
 	<string>@b</string>
 	<key>name</key>
-	<string>Export for Mac OS X</string>
+	<string>Export for Current OS</string>
 	<key>outputCaret</key>
 	<string>afterOutput</string>
 	<key>outputFormat</key>
