@@ -15,7 +15,9 @@ Already this bundle can:
   * Mac OS X App
   * Windows Executable
   * Linux Binary
-* Provide tons of snippets and auto completions
+* Provide tons of snippets and autocompletions
+  * Press TAB to execute a snippet
+  * Press ESC to iterate through autocompletions
 
 ## Resources
 
