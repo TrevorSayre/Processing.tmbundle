@@ -15,6 +15,7 @@ Already this bundle can:
   * Mac OS X App
   * Windows Executable
   * Linux Binary
+  * Processing.js Web Files
 * Provide tons of snippets and autocompletions
   * Press TAB to execute a snippet
   * Press ESC to iterate through autocompletions
@@ -40,6 +41,16 @@ You must then install the command line support for Processing:
 http://wiki.processing.org/w/Command_Line
 
 You can then finally install this bundle and begin making sketches in TextMate 2.
+
+### Notes on Processing.js
+
+The method to build for the web is currently naive. It will copy your PDE files into the web-export directory and build an index.html, index.css, and processing.js file for you. It will then open the web-export directoyr in your default text editor and launch a Terminal window at the web-export directory. From there, you can launch an http server and view your sketch. Any saved edits to the web-export directory will be reflected upon refreshing your page.
+
+Command to launch an http server:
+`python -m SimpleHTTPServer 8888`
+
+Address for the page:
+`http://localhost:8888`
 
 ## Request
 
