@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/bin/bash
+
+if [ -z "$TM_FILEPATH" ]
+  then
+  echo "ERROR: Project must be saved before exporting"
+else
+  DIR=`basename "$TM_PROJECT_DIRECTORY"`
+  EX="$TM_PROJECT_DIRECTORY/web-export"
+  if [ ! -d $EX ]
+    then
+    mkdir $EX
+  fi
+  if [ -d $EX ]
+    then
+    ls $TM_PROJECT_DIRECTORY/*.pde | sed 's/ /\\ /g' | xargs -I SRC cp SRC $EX/
+    cp "$TM_BUNDLE_SUPPORT/index.css" "$EX/"
+    cp "$TM_BUNDLE_SUPPORT/processing.js" "$EX/"
+    SRC="$TM_BUNDLE_SUPPORT/index.html"
+    DST="$EX/index.html"
+    cd "$TM_PROJECT_DIRECTORY"
+    NAME=$DIR; LABEL=$DIR; SOURCES=`ls *.pde | tr '\n' ' '`; LINK="links";
+    echo $SOURCES
+    sed "s/\${name}/$NAME/g;s/\${label}/$LABEL/g;s/\${sources}/$SOURCES/g;s/\${links}/$LINKS/g;" $SRC &gt; $DST
+    open -a Terminal $EX
+    open -t $EX
+  else
+    echo "ERROR: Could not create $TM_PROJECT_DIRECTORY/web-export directory"
+  fi
+fi</string>
+	<key>input</key>
+	<string>none</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>keyEquivalent</key>
+	<string>@b</string>
+	<key>name</key>
+	<string>Export for Web</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>discard</string>
+	<key>scope</key>
+	<string>source.processing</string>
+	<key>uuid</key>
+	<string>B58A4C50-F8CD-4126-95A1-0CD9063C6AB9</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>${name} : Built with TextMate, Processing and Processing.js</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAQAAVzABAEAjBQAaDwYAWjUGAGE6CQBrQQ0ATS8PAFhAJwBUQC8AbFI6AHVXPACBZk4A4NrWAPb19QAAAAAAAMmZmZmZmgAJIwAAAAAAcMIjPjA+PjAKpxIuMDMzMAm0Ii4zMzMACaIiLt3dMAAJtyIuIzPQAAm0Un5yM+IzKLRkfncy4iIotRF+dyLkIiq0QX53F+EiGrQUTkd34iIatEVu7u5iIVrBVVRBRFRVbAtGZGZla2uwAMu7u7u8vADAAwAAgAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIABAADAAwAA">
+    <meta name="Generator" content="TextMate Processing Bundle">
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    +
+    +    Wondering how this works? 
+    +
+    +    Go to: http://processing.org/
+    +    and: http://processingjs.org/
+    +
+    +    Built with: http://macromates.com
+    +    and: https://github.com/TrevorSayre/Processing.tmbundle
+    +
+    + - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <link rel="stylesheet" href="index.css" type="text/css" media="screen" charset="utf-8">
+    <!--[if lt IE 9]>
+      <script type="text/javascript">alert("Your browser does not support the canvas tag.");</script>
+    <![endif]-->
+    <script src="processing.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      // get the id attribute of generated sketch html element
+      function getProcessingSketchId () { return '${label}'; }
+    </script>
+  </head>
+  <body>
+    <div id="content">
+      <div id="wrapper">
+        <canvas id="${label}" data-processing-sources="${sources}">
+          <p>Your browser does not support the canvas tag.</p>
+          <!-- Note: you can put any alternative content here. -->
+        </canvas>
+        <noscript>
+          <p>JavaScript is required to view the contents of this page.</p>
+        </noscript>
+      </div>
+      <h1>${name}</h1>
+      <p id="description"></p>
+      <p id="sources">Source code: 
+        ${links}
+      </p>
+      <p>
+        Built with: <a href="http://processing.org" title="Processing">Processing</a>
+        ∙ <a href="http://processingjs.org" title="Processing.js">Processing.js</a>
+        ∙ <a href="http://macromates.com" title="TextMate">TextMate</a>
+        ∙ <a href="https://github.com/TrevorSayre/Processing.tmbundle" title="Processing.tmbundle">Processing.tmbundle</a>
+      </p>
+     </div>
+  </body>
+</html>
