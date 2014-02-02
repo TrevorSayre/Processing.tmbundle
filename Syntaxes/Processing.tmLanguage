@@ -1190,7 +1190,7 @@
 			<array>
 				<dict>
 					<key>match</key>
-					<string>\b(focused|frameCount|frameRate|height|height|key|keyCode|keyPressed|mouseButton|mousePressed|mouseX|mouseY|online|pixels|pmouseX|pmouseY|screen|width)(?!\s*\()\b</string>
+					<string>\b(focused|frameCount|frameRate|height|height|key|keyCode|keyPressed|mouseButton|mousePressed|mouseX|mouseY|online|pixels|pmouseX|pmouseY|screen|width|displayWidth|displayHeight)(?!\s*\()\b</string>
 					<key>name</key>
 					<string>variable.other.processing</string>
 				</dict>
