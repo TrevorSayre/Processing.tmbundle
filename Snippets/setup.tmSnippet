@@ -3,11 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>void setup(){
+	<string>void setup() {
 	$1
 }
 
-void draw(){
+void draw() {
 	$0
 }
 </string>

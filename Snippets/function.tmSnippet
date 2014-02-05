@@ -3,17 +3,16 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${1:void} ${2:function}($3) {
-	$4${1/void$|(.+)/(?1:\n\treturn nil;)/}
+	<string>${1:void} function($2) {
+  $3${1/void$|(.+)/(?1:\n\treturn nil;)/}
 }
-
-$0</string>
+</string>
+	<key>keyEquivalent</key>
+	<string>$</string>
 	<key>name</key>
 	<string>function</string>
 	<key>scope</key>
 	<string>source.processing</string>
-	<key>tabTrigger</key>
-	<string>fx</string>
 	<key>uuid</key>
 	<string>654A3B30-79ED-4C63-B244-E48DDC280154</string>
 </dict>
