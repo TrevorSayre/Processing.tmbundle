@@ -22,7 +22,7 @@ Already this bundle can:
 
 ## Resources
 
-TextMate 2 currently inclues a Processing bundle:  
+TextMate 2 currently includes a Processing bundle:  
 https://github.com/textmate/processing.tmbundle
 
 There also exists the once excellent Processing bundle for TextMate by peon:  
@@ -44,7 +44,7 @@ You can then finally install this bundle and begin making sketches in TextMate 2
 
 ### Notes on Processing.js
 
-The method to build for the web is currently naive. It will copy your PDE files into the web-export directory and build an index.html, index.css, and processing.js file for you. It will then open the web-export directoyr in your default text editor and launch a Terminal window at the web-export directory. From there, you can launch an http server and view your sketch. Any saved edits to the web-export directory will be reflected upon refreshing your page.
+The method to build for the web is currently naive. It will copy your PDE files into the web-export directory and build an index.html, index.css, and processing.js file for you. It will then open the web-export directory in your default text editor and launch a Terminal window at the web-export directory. From there, you can launch an http server and view your sketch. Any saved edits to the web-export directory will be reflected upon refreshing your page.
 
 Command to launch an http server:
 `python -m SimpleHTTPServer 8888`
