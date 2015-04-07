@@ -19,17 +19,19 @@ if [ -z "$TM_FILEPATH" ]
   "${TM_PROCESSING:-processing-java}" --force --sketch="$TMP_DIR" --output="$TMP_DIR/build" --run 2&gt;&amp;1
   rm -rf "$TMP_DIR"
 else
-  DIR=`basename "$TM_PROJECT_DIRECTORY"`
-  if [ -e "$TM_PROJECT_DIRECTORY/$DIR.pde" ]
+  DIR=$(dirname "$TM_FILEPATH")
+  FILENAME=$(basename "$DIR")
+  if [ -e "$DIR/$FILENAME.pde" ]
     then
-    "${TM_PROCESSING:-processing-java}" --force --sketch="$TM_PROJECT_DIRECTORY" --output="$TM_PROJECT_DIRECTORY"/build --run 2&gt;&amp;1
-    rm -rf "$TM_PROJECT_DIRECTORY/build"
+    "${TM_PROCESSING:-processing-java}" --force --sketch="$DIR" --output="$DIR"/build --run 2&gt;&amp;1
+    rm -rf "$DIR/build"
   else
-    echo "ERROR: $TM_PROJECT_DIRECTORY must contain a file named $DIR.pde"
+    echo "ERROR: $DIR must contain a file named $FILENAME.pde"
   fi
 fi
 
-echo "&lt;/pre&gt;"</string>
+echo "&lt;/pre&gt;"
+</string>
 	<key>input</key>
 	<string>document</string>
 	<key>inputFormat</key>
