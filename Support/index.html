@@ -6,7 +6,7 @@
     <meta name="Generator" content="TextMate Processing Bundle">
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - -
     +
-    +    Wondering how this works? 
+    +    Wondering how this works?
     +
     +    Go to: http://processing.org/
     +    and: http://processingjs.org/
@@ -19,7 +19,7 @@
     <!--[if lt IE 9]>
       <script type="text/javascript">alert("Your browser does not support the canvas tag.");</script>
     <![endif]-->
-    <script src="processing.js" type="text/javascript"></script>
+    <script src="processing.min.js" type="text/javascript"></script>
     <script type="text/javascript">
       // get the id attribute of generated sketch html element
       function getProcessingSketchId () { return '${label}'; }
@@ -38,8 +38,11 @@
       </div>
       <h1>${name}</h1>
       <p id="description"></p>
-      <p id="sources">Source code: 
+      <p id="sources">Sketch files:
         ${links}
+      </p>
+      <p id="archive">Source archive:
+        ${archive}
       </p>
       <p>
         Built with: <a href="http://processing.org" title="Processing">Processing</a>

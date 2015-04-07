@@ -11,29 +11,32 @@ if [ -z "$TM_FILEPATH" ]
   then
   echo "ERROR: Project must be saved before exporting"
 else
-  DIR=`basename "$TM_PROJECT_DIRECTORY"`
-  EX="$TM_PROJECT_DIRECTORY/web-export"
-  if [ ! -d $EX ]
+  DIR=$(dirname "$TM_FILEPATH")
+  DIRNAME=$(basename "$DIR")
+  EX="$DIR/export/web"
+  if [ ! -d "$EX" ]
     then
-    mkdir $EX
+    mkdir -p "$EX"
+    else
+    rm -r "$EX"
+    mkdir -p "$EX"
   fi
-  if [ -d $EX ]
+  if [ -d "$EX" ]
     then
-    ls $TM_PROJECT_DIRECTORY/*.pde | sed 's/ /\\ /g' | xargs -I SRC cp SRC $EX/
-    cp "$TM_BUNDLE_SUPPORT/index.css" "$EX/"
-    cp "$TM_BUNDLE_SUPPORT/processing.js" "$EX/"
-    SRC="$TM_BUNDLE_SUPPORT/index.html"
-    DST="$EX/index.html"
-    cd "$TM_PROJECT_DIRECTORY"
-    NAME=$DIR; LABEL=$DIR; SOURCES=`ls *.pde | tr '\n' ' '`; LINK="links";
-    echo $SOURCES
-    sed "s/\${name}/$NAME/g;s/\${label}/$LABEL/g;s/\${sources}/$SOURCES/g;s/\${links}/$LINKS/g;" $SRC &gt; $DST
-    open -a Terminal $EX
-    open -t $EX
+    rsync -av --progress "$DIR"/* "$EX" --exclude export
+    cp "$TM_BUNDLE_SUPPORT"/* "$EX"
+    cd "$EX"
+    SOURCES=$(ls *.pde | tr '\n' ' ')
+    LINKS=$(ls *.pde | awk 'NF {print "&lt;a href=\"" $0 "\"&gt;" $0 "&lt;\\\/a&gt;, "}' | awk 1 ORS='')
+    ARCHIVE="&lt;a href=\"$DIRNAME.zip\"&gt;$DIRNAME.zip&lt;\/a&gt;"
+    sed -i '' "s/\${name}/$DIRNAME/g;s/\${label}/$DIRNAME/g;s/\${sources}/${SOURCES%?}/g;s/\${links}/${LINKS%??}/g;s/\${archive}/$ARCHIVE/g" "$EX/index.html"
+    zip "$DIRNAME" *
+    open "$EX"
   else
-    echo "ERROR: Could not create $TM_PROJECT_DIRECTORY/web-export directory"
+    echo "ERROR: Could not create $EX directory"
   fi
-fi</string>
+fi
+</string>
 	<key>input</key>
 	<string>none</string>
 	<key>inputFormat</key>
